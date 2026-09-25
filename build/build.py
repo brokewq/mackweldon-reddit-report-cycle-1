@@ -207,7 +207,7 @@ def dots(pids):
 own_cards = ""
 for o in OWN:
     own_cards += (f'<article class="own-c"><a class="own-img" href="shots/s{o["img"]:02d}.webp" data-kw="{e(o["kw"])}" data-pl="3 of our threads on page one">'
-                  f'<img src="thumbs/t{o["img"]:02d}.webp" alt="Google results for {e(o["kw"])}" loading="lazy"><span class="own-zoom">View capture {AR}</span></a>'
+                  f'<img src="thumbs/t{o["img"]:02d}.webp" alt="Google results for {e(o["kw"])}" loading="lazy"><span class="own-zoom">View screenshot {AR}</span></a>'
                   f'<div class="own-b"><div class="own-slots"><i></i><i></i><i></i><span>3 of our threads</span></div>'
                   f'<h3>“{e(o["kw"])}”</h3><p>{e(o["line"])}</p><div class="own-ps">{dots(o["posts"])}</div></div></article>')
 dbl = ""
@@ -266,7 +266,7 @@ for i, p in enumerate(POSTS, 1):
                  f'<span class="lg-i">{j:02d}</span><span class="lg-k">{e(k)}{tag}</span>'
                  f'<span class="lg-s s{s}">{SURF[s]}</span>'
                  f'<span class="lg-t"><img src="thumbs/t{img:02d}.webp" alt="Google results for {e(k)}" loading="lazy"></span>'
-                 f'<span class="lg-v">View {AR}</span></a>')
+                 f'<span class="lg-v">View screenshot {AR}</span></a>')
     rank = (f'<div class="ribbon{" gold" if p["rank"] == 1 else ""}"><b>#{p["rank"]}</b> post on {p["sub"]} the day it went up</div>'
             if p["rank"] else "")
     stats = (f'<div class="pstat"><b>{p["vlabel"]}</b><span>Views</span></div>'
@@ -377,8 +377,6 @@ html = f'''<!doctype html>
 <title>Mack Weldon: Reddit Report, Cycle 01 | M81</title>
 <meta name="description" content="Mack Weldon on Reddit, Cycle 01: {fmt_m(views)} views, {n_rank} Google rankings, {n_posts} posts and {n_comments} branded comments.">
 <link rel="icon" href="m81-logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>{css}</style></head><body>
 {hero}{glance}{own}{posts_html}{comments}{ahead}{lightbox}</body></html>'''
 (ROOT / "index.html").write_text(html)
