@@ -1,0 +1,197 @@
+"""Source data for the Mack Weldon Cycle 01 Reddit report.
+
+Posts and insight numbers come from the Reddit Post Insights screenshots in the
+Notion export. Keyword rows come from the Google captures (25 Sep 2026), mapped
+to the thread(s) actually highlighted in each capture.
+Surface codes: C = "What people are saying" carousel, D = Discussions and forums,
+O = top organic results, A = AI Overview source.
+"""
+
+POSTS = [
+    dict(id="P1", nick="Sweat a lot", date="4 Sep", sub="r/malefashionadvice", theme="sweat",
+         title="Best underwear if you sweat a lot?",
+         url="https://www.reddit.com/r/malefashionadvice/comments/1w78ite/best_underwear_if_you_sweat_a_lot/",
+         views=86_900, vlabel="86.9K", rank=None, us=62.9, ins=0,
+         extra=[("44", "Upvotes")]),
+    dict(id="P2", nick="Quick-dry travel", date="15 Sep", sub="r/MensUnderwearGuide", theme="travel",
+         title="Best quick-drying underwear for travel?",
+         url="https://www.reddit.com/r/MensUnderwearGuide/comments/1wg81dz/best_quickdrying_underwear_for_travel/",
+         views=12_300, vlabel="12.3K", rank=3, us=64.0, ins=3,
+         note="Also the account's #4 post of all time."),
+    dict(id="P3", nick="Most comfortable underwear", date="20 Sep", sub="r/malefashionadvice", theme="comfort",
+         title="Most comfortable men's underwear you've ever worn?",
+         url="https://www.reddit.com/r/malefashionadvice/comments/1wlm83t/most_comfortable_mens_underwear_youve_ever_worn/",
+         views=683_000, vlabel="683K", rank=1, us=61.8, ins=15,
+         extra=[("720+", "Replies"), ("375", "Upvotes")],
+         note="Our comment held a top-3 spot in the thread for the first 12 hours."),
+    dict(id="P4", nick="Sweating in hot weather", date="21 Sep", sub="r/malefashionadvice", theme="sweat",
+         title="Best men's underwear for sweating in hot weather?",
+         url="https://www.reddit.com/r/malefashionadvice/comments/1wmmbc7/best_mens_underwear_for_sweating_in_hot_weather/",
+         views=29_600, vlabel="29.6K", rank=12, us=67.7, ins=30,
+         extra=[("20+", "Replies")],
+         note="The popular comment Google shows on this thread names Mack Weldon AIRKNITx."),
+    dict(id="P5", nick="Sweatpants & joggers", date="25 Sep", sub="r/malefashionadvice", theme="sweatpants",
+         title="Best sweatpants or joggers for men in 2026?",
+         url="https://www.reddit.com/r/malefashionadvice/comments/1wp9bca/best_sweatpants_or_joggers_for_men_in_2026/",
+         views=27_000, vlabel="27K", rank=11, us=70.6, ins=46,
+         extra=[("20", "Replies")]),
+    dict(id="P6", nick="Best boxer briefs", date="25 Sep", sub="r/mensfashionadvice", theme="comfort",
+         title="Best boxer briefs for men?",
+         url="https://www.reddit.com/r/mensfashionadvice/comments/1wpbbpz/best_boxer_briefs_for_men/",
+         views=51_000, vlabel="51K", rank=3, us=69.7, ins=53,
+         extra=[("90+", "Replies")]),
+    dict(id="P7", nick="Boxer brief brands", date="25 Sep", sub="r/MensUnderwearGuide", theme="comfort",
+         title="What boxer brief brand do you guys actually swear by?",
+         url="https://www.reddit.com/r/MensUnderwearGuide/comments/1wpf06y/what_boxer_brief_brand_do_you_guys_actually_swear/",
+         views=32_800, vlabel="32.8K", rank=1, us=63.5, ins=56,
+         extra=[("60+", "Replies")],
+         note="Also the account's #9 post of all time."),
+    dict(id="P8", nick="Anti-odor travel tees", date="25 Sep", sub="r/onebag", theme="tees",
+         title="Best anti-odor t-shirts for travel? Looking for ones I can rewear a few days",
+         url="https://www.reddit.com/r/onebag/comments/1wpfdxg/best_antiodor_tshirts_for_travel_looking_for_ones",
+         views=101_000, vlabel="101K", rank=2, us=53.3, ins=64,
+         extra=[("95", "Replies"), ("43", "Upvotes")]),
+]
+
+THEMES = {
+    "comfort": ("Comfort & boxer briefs", "#f96a16"),
+    "sweat": ("Sweat & hot weather", "#c2410c"),
+    "travel": ("Travel & quick-dry", "#2e7d52"),
+    "tees": ("Anti-odor tees", "#d99a1e"),
+    "sweatpants": ("Sweatpants & joggers", "#1c1611"),
+}
+
+SURF = {
+    "C": "What people are saying",
+    "D": "Discussions and forums",
+    "O": "Top results",
+    "A": "AI Overview",
+}
+
+# (post, keyword, image number, surface)
+KW = [
+    ("P1", "underwear for sweaty summers", 1, "A"),
+    ("P1", "sweat absorbing underwear for summer", 38, "C"),
+
+    ("P2", "best quick drying boxer briefs for travel", 4, "D"),
+    ("P2", "best quick drying underwear for travel men", 5, "C"),
+    ("P2", "recommend quick drying boxer briefs for travel", 6, "O"),
+    ("P2", "quick dry underwear for travel", 7, "C"),
+    ("P2", "best underwear for long trips men", 8, "C"),
+    ("P2", "men travel underwear", 9, "C"),
+    ("P2", "best underwear for long trips", 10, "C"),
+    ("P2", "top quick drying underwear for travel men", 11, "D"),
+    ("P2", "best quick dry underwear for travel", 12, "D"),
+    ("P2", "best underwear for travel", 13, "C"),
+    ("P2", "travel underwear for men", 14, "C"),
+
+    ("P3", "best comfortable boxer briefs", 28, "C"),
+    ("P3", "boxer brief recommendations", 54, "C"),
+    ("P3", "best boxer briefs", 27, "C"),
+    ("P3", "most comfortable underwear for guys", 18, "C"),
+    ("P3", "what is the most comfortable men's underwear", 20, "C"),
+    ("P3", "best comfortable mens underwear", 23, "C"),
+    ("P3", "most comfortable men's underwear reddit", 16, "O"),
+    ("P3", "comfortable men's underwear", 17, "D"),
+    ("P3", "high quality underwear", 22, "C"),
+    ("P3", "softest men's underwear", 25, "D"),
+    ("P3", "most comfortable underwear material men", 26, "C"),
+    ("P3", "best everyday wear briefs", 61, "C"),
+
+    ("P4", "underwear for sweaty summers", 41, "C"),
+    ("P4", "best underwear for guys who sweat a lot", 31, "C"),
+    ("P4", "best boxer briefs for men who sweat a lot", 32, "C"),
+    ("P4", "briefs for men who sweat a lot", 33, "C"),
+    ("P4", "underwear for sweating in summer", 34, "C"),
+    ("P4", "best underwear for sweaty people", 35, "C"),
+    ("P4", "best underwear for working in hot weather", 36, "C"),
+    ("P4", "recommend men's underwear for hot weather", 37, "C"),
+    ("P4", "best briefs for hot weather", 39, "C"),
+    ("P4", "underwear for hot climate", 40, "C"),
+    ("P4", "best underwear for summer", 42, "C"),
+    ("P4", "boxer briefs for warm weather", 43, "C"),
+    ("P4", "briefs for hot weather", 44, "C"),
+
+    ("P5", "best sweatpants for men", 47, "C"),
+    ("P5", "best joggers", 48, "C"),
+    ("P5", "high quality sweatpants for men", 49, "C"),
+    ("P5", "top sweatpants brands in 2026", 50, "O"),
+    ("P5", "best men sweatpants", 51, "C"),
+    ("P5", "best sweatpants or joggers", 52, "C"),
+
+    ("P6", "best comfortable boxer briefs", 28, "C"),
+    ("P6", "boxer brief recommendations", 54, "C"),
+    ("P6", "best boxer briefs", 27, "C"),
+    ("P6", "most comfortable underwear for guys", 55, "C"),
+    ("P6", "what is the most comfortable men's underwear", 20, "C"),
+    ("P6", "best comfortable mens underwear", 23, "C"),
+    ("P6", "comfiest men's underwear", 19, "C"),
+    ("P6", "comfiest boxer briefs", 29, "D"),
+
+    ("P7", "best comfortable boxer briefs", 28, "C"),
+    ("P7", "boxer brief recommendations", 54, "C"),
+    ("P7", "best boxer briefs", 57, "C"),
+    ("P7", "boxer briefs that last", 59, "C"),
+    ("P7", "what boxer brief brand is the best", 60, "C"),
+    ("P7", "most worth it boxer brief brand", 62, "C"),
+    ("P7", "long lasting briefs", 63, "C"),
+
+    ("P8", "best anti odor t shirts for travel", 65, "O"),
+    ("P8", "anti odor t shirts for travel", 66, "O"),
+    ("P8", "odor resistant t shirts for travel", 67, "D"),
+    ("P8", "t shirts that don't stink when you sweat", 68, "D"),
+    ("P8", "reviews for anti odor t shirts", 69, "O"),
+    ("P8", "anti odor t shirt suggestions", 70, "D"),
+    ("P8", "t shirts that don't stink after a few days", 71, "O"),
+    ("P8", "t shirts that don't hold odor", 72, "D"),
+]
+
+# Keywords where several of our threads rank at once.
+OWN = [
+    dict(kw="best comfortable boxer briefs", posts=["P3", "P6", "P7"], img=28,
+         line="Cards 1, 2 and 3 of Google's “What people are saying” carousel are all our threads."),
+    dict(kw="boxer brief recommendations", posts=["P6", "P3", "P7"], img=54,
+         line="Cards 1, 2 and 3 of the carousel are all our threads."),
+    dict(kw="best boxer briefs", posts=["P6", "P3", "P7"], img=27,
+         line="Three of our threads share the carousel for the category's head term."),
+]
+DOUBLE = [
+    dict(kw="most comfortable underwear for guys", posts=["P3", "P6"], img=18),
+    dict(kw="what is the most comfortable men's underwear", posts=["P3", "P6"], img=20),
+    dict(kw="best comfortable mens underwear", posts=["P3", "P6"], img=23),
+    dict(kw="underwear for sweaty summers", posts=["P1", "P4"], img=41),
+]
+
+# (date, subreddit, url, is_post)
+FEED = [
+    ("2026-08-29", "r/MensUnderwearGuide", "https://www.reddit.com/r/MensUnderwearGuide/comments/1w1ukk2/comment/p6o2mpi/"),
+    ("2026-09-04", "r/malefashionadvice", "https://www.reddit.com/r/malefashionadvice/comments/1w78ite/comment/p7t3qvx/"),
+    ("2026-09-15", "r/MensUnderwearGuide", "https://www.reddit.com/r/MensUnderwearGuide/comments/1wg81dz/comment/p9xysm7/"),
+    ("2026-09-20", "r/malefashionadvice", "https://www.reddit.com/r/malefashionadvice/comments/1wlm83t/comment/paztlwj/"),
+    ("2026-09-21", "r/malefashionadvice", "https://www.reddit.com/r/malefashionadvice/comments/1wmmbc7/comment/pb8871w/"),
+    ("2026-09-24", "r/bigmenfashionadvice", "https://www.reddit.com/r/bigmenfashionadvice/comments/1wm128i/comment/pblrug2/"),
+    ("2026-09-24", "r/ftm", "https://www.reddit.com/r/ftm/comments/1wktczs/comment/pblnr2i/"),
+    ("2026-09-24", "r/AskMen", "https://www.reddit.com/r/AskMen/comments/1wjnhxt/comment/pblnth1/"),
+    ("2026-09-24", "r/MensUnderwearGuide", "https://www.reddit.com/r/MensUnderwearGuide/comments/1wiig5p/comment/pbloco7/"),
+    ("2026-09-24", "r/MeUndies", "https://www.reddit.com/r/MeUndies/comments/1wi3r2e/comment/pblnc1g/"),
+    ("2026-09-24", "r/BuyItForLife", "https://www.reddit.com/r/BuyItForLife/comments/1wgkexv/comment/pbm82yc/"),
+    ("2026-09-24", "r/AskMen", "https://www.reddit.com/r/AskMen/comments/1wf07t7/comment/pblujo1/"),
+    ("2026-09-24", "r/AskMen", "https://www.reddit.com/r/AskMen/comments/1wd4diz/comment/pblqbqp/"),
+    ("2026-09-24", "r/MensUnderwearGuide", "https://www.reddit.com/r/MensUnderwearGuide/comments/1wb5m7n/comment/pblsdnq/"),
+    ("2026-09-24", "r/MensUnderwearGuide", "https://www.reddit.com/r/MensUnderwearGuide/comments/1wblbpa/comment/pblu7aa/"),
+    ("2026-09-24", "r/MensUnderwearGuide", "https://www.reddit.com/r/MensUnderwearGuide/comments/1watuqe/comment/pbly9m4/"),
+    ("2026-09-24", "r/BuyItForLife", "https://www.reddit.com/r/BuyItForLife/comments/1w9diyj/comment/pbmajdb/"),
+    ("2026-09-24", "r/EgySelfCare", "https://www.reddit.com/r/EgySelfCare/comments/1w8otwm/comment/pbm2nnl/"),
+    ("2026-09-24", "r/MensUnderwearGuide", "https://www.reddit.com/r/MensUnderwearGuide/comments/1w7ng45/comment/pbm31gg/"),
+    ("2026-09-24", "r/MensUnderwearGuide", "https://www.reddit.com/r/MensUnderwearGuide/comments/1w6x5n8/comment/pbm5cig/"),
+    ("2026-09-24", "r/MeUndies", "https://www.reddit.com/r/MeUndies/comments/1w66d8o/comment/pbm3nno/"),
+    ("2026-09-24", "r/AskMen", "https://www.reddit.com/r/AskMen/comments/1w0mpvx/comment/pbm6zj3/"),
+    ("2026-09-24", "r/Shein", "https://www.reddit.com/r/Shein/comments/1w01v07/comment/pbm72gt/"),
+    ("2026-09-24", "r/AskBlackGayBros", "https://www.reddit.com/r/AskBlackGayBros/comments/1w50zn5/comment/pbm6u1o/"),
+    ("2026-09-25", "r/malefashionadvice", "https://www.reddit.com/r/malefashionadvice/comments/1wp9bca/comment/pbu3adl/"),
+    ("2026-09-25", "r/mensfashionadvice", "https://www.reddit.com/r/mensfashionadvice/comments/1wpbbpz/comment/pbu7g6c/"),
+    ("2026-09-25", "r/MensUnderwearGuide", "https://www.reddit.com/r/MensUnderwearGuide/comments/1wpf06y/comment/pbuuevo/"),
+    ("2026-09-25", "r/onebag", "https://www.reddit.com/r/onebag/comments/1wpfdxg/comment/pbuw9a2/"),
+]
+POST_DATES = {"P1": "2026-09-04", "P2": "2026-09-15", "P3": "2026-09-20", "P4": "2026-09-21",
+              "P5": "2026-09-25", "P6": "2026-09-25", "P7": "2026-09-25", "P8": "2026-09-25"}

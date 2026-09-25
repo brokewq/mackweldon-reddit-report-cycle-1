@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mack Weldon: Reddit Report, Cycle 01 | M81</title>
+<meta name="description" content="Mack Weldon on Reddit, Cycle 01: 1.02M views, 67 Google rankings, 8 posts and 28 branded comments.">
+<link rel="icon" href="m81-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>:root{
+  --navy:#1c1611; --navy2:#c2570e; --accent:#f96a16; --ink:#1c1815;
+  --muted:#8a7d6e; --line:#ece3d7; --bg:#fbf5ee; --card:#ffffff;
+  --green:#2e7d52; --green-soft:#e6f4ec; --green-line:#c7e6d4;
+  --orange-soft:#fdeee1; --orange-line:#f6d9c2; --wait:#b06a12; --wait-bg:#fbeede;
+  --shadow:0 4px 16px rgba(28,22,17,.05); --shadow-lg:0 18px 48px rgba(28,22,17,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0; background:var(--bg); color:var(--ink);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+  line-height:1.55; -webkit-font-smoothing:antialiased}
+a{color:var(--navy2)}
+h1,h2,h3{font-family:'Space Grotesk','Inter',sans-serif; letter-spacing:-.01em}
+.ar{width:.72em; height:.72em; display:inline-block; vertical-align:baseline; margin-left:.15em}
+.eyebrow{font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.12em; color:var(--muted)}
+
+.sampler-flag{background:#1c1611; color:#f7d9c0; font:600 12px/1 'Space Grotesk',sans-serif; letter-spacing:.08em;
+  text-transform:uppercase; text-align:center; padding:9px 12px}
+.stub{margin-top:18px; border:1.5px dashed #e0b17c; background:var(--wait-bg); color:#7a4a0c; border-radius:14px;
+  padding:16px 18px; font-size:13.5px; line-height:1.5}
+.stub span{display:inline-block; margin-right:10px; font:700 10.5px/1 'Space Grotesk',sans-serif; letter-spacing:.12em;
+  text-transform:uppercase; background:#fff; border:1px solid #e0b17c; border-radius:999px; padding:5px 9px}
+
+/* ===== hero ===== */
+.hero{position:relative; overflow:hidden; padding:40px 24px 54px;
+  background:
+    radial-gradient(900px 520px at 90% -14%, rgba(249,106,22,.26), transparent 58%),
+    radial-gradient(680px 460px at 0% 118%, rgba(46,125,82,.10), transparent 58%),
+    linear-gradient(165deg,#fff6ec 0%, #fbefe3 55%, #f6e8d8 100%)}
+.hero-rings{position:absolute; z-index:1; top:-330px; right:-280px; width:760px; height:760px; pointer-events:none; border-radius:50%;
+  background:repeating-radial-gradient(circle at center, transparent 0 55px, rgba(249,106,22,.11) 55px 57px);
+  -webkit-mask-image:radial-gradient(circle at center,#000,transparent 70%); mask-image:radial-gradient(circle at center,#000,transparent 70%)}
+.hero::after{content:""; position:absolute; inset:0; z-index:1; pointer-events:none; opacity:.6;
+  background-image:radial-gradient(rgba(28,22,17,.07) 1px, transparent 1.5px); background-size:23px 23px;
+  -webkit-mask-image:linear-gradient(172deg,#000 16%,transparent 70%); mask-image:linear-gradient(172deg,#000 16%,transparent 70%)}
+.hero-inner{position:relative; z-index:3; max-width:1080px; margin:0 auto}
+.brandrow{display:flex; align-items:center; gap:13px; margin-bottom:34px}
+.brandrow .brandmark{height:38px; width:auto; display:block}
+.brandrow .bl1{font-family:'Space Grotesk',sans-serif; font-size:17px}
+.brandrow .for{margin-left:auto; font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:#7a6e60; font-weight:600;
+  background:rgba(255,255,255,.62); border:1px solid #efe2d3; border-radius:999px; padding:8px 14px}
+.kicker{display:inline-flex; align-items:center; gap:10px; margin:0 0 16px; font-family:'Space Grotesk',sans-serif;
+  font-size:12.5px; font-weight:700; letter-spacing:.17em; text-transform:uppercase; color:var(--accent)}
+.kicker::before{content:""; width:24px; height:3px; background:var(--accent); border-radius:2px}
+.hero h1{font-size:clamp(36px,6vw,68px); line-height:1.0; letter-spacing:-.03em; margin:0 0 20px; font-weight:700}
+.hero h1 i{font-family:'Instrument Serif',serif; font-weight:400; color:var(--muted); padding:0 .04em}
+.hero h1 .hl{color:var(--accent); border-bottom:6px solid rgba(249,106,22,.30)}
+.claim{font-size:16.5px; line-height:1.55; color:#4a4038; max-width:64ch; margin:0 0 30px}
+.herostats{display:grid; grid-template-columns:repeat(6,1fr); max-width:none; margin:0 0 26px;
+  background:rgba(255,255,255,.72); border:1px solid #efe2d3; border-radius:20px; backdrop-filter:blur(6px);
+  box-shadow:var(--shadow-lg)}
+.herostats div{padding:22px 20px; border-left:1px solid #efe2d3}
+.herostats div:first-child{border-left:none}
+.herostats b{display:block; font-family:'Space Grotesk',sans-serif; font-size:clamp(30px,3.6vw,44px); line-height:1; letter-spacing:-.03em}
+.herostats span{display:block; margin-top:8px; white-space:nowrap; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--muted)}
+.prepared{display:inline-block; color:#7a6e60; font-size:12.5px; letter-spacing:.04em; margin:0}
+
+/* ===== nav ===== */
+.topnav{position:sticky; top:0; z-index:20; background:rgba(251,245,238,.86); backdrop-filter:blur(10px); border-bottom:1px solid var(--line)}
+.topnav-in{max-width:1080px; margin:0 auto; padding:10px 24px; display:flex; gap:6px; overflow-x:auto}
+.topnav a{flex:none; text-decoration:none; color:#4a4038; font:600 13px/1 'Space Grotesk',sans-serif; padding:9px 14px; border-radius:999px}
+.topnav a:hover{background:#fff; box-shadow:inset 0 0 0 1px var(--line)}
+
+/* ===== layout ===== */
+.wrap{max-width:1080px; margin:0 auto; padding:48px 24px 10px}
+.block{margin-top:52px}
+.block:first-child{margin-top:0}
+.block-head h2,.block-head h3{margin:0; font-size:23px; color:var(--navy); font-weight:700; display:flex; align-items:center; gap:12px}
+.block-head h2::before,.block-head h3::before{content:""; width:5px; height:24px; background:var(--accent); border-radius:3px}
+.brand.c .block-head h3::before{background:var(--green)}
+.block-head p{margin:6px 0 0 17px; color:var(--muted); font-size:14px; max-width:80ch}
+
+/* ===== metrics ===== */
+.metrics{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:22px}
+.metric{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:24px 22px; box-shadow:var(--shadow); position:relative; overflow:hidden}
+.metric::before{content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:var(--accent)}
+.metric .mval{font-family:'Space Grotesk',sans-serif; font-size:46px; font-weight:700; color:var(--navy); line-height:1; letter-spacing:-.02em}
+.metric .mlab{margin-top:9px; font-size:11.5px; text-transform:uppercase; letter-spacing:.09em; color:var(--muted); font-weight:700}
+.metric .mnote{margin-top:7px; font-size:13px; color:var(--muted)}
+
+/* ===== brand duo ===== */
+.duos{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px}
+.duo{display:block; text-decoration:none; color:inherit; background:var(--card); border:1px solid var(--line); border-radius:20px;
+  padding:26px 26px 22px; box-shadow:var(--shadow); position:relative; overflow:hidden; transition:transform .18s ease, box-shadow .18s ease}
+.duo:hover{transform:translateY(-2px); box-shadow:var(--shadow-lg)}
+.duo::after{content:""; position:absolute; right:-90px; top:-90px; width:240px; height:240px; border-radius:50%;
+  background:radial-gradient(circle, rgba(249,106,22,.16), transparent 68%)}
+.duo.c::after{background:radial-gradient(circle, rgba(46,125,82,.16), transparent 68%)}
+.duo-top{display:flex; justify-content:space-between; align-items:flex-start; gap:12px; position:relative; z-index:1}
+.duo-name{font-family:'Space Grotesk',sans-serif; font-size:30px; font-weight:700; letter-spacing:-.02em; margin-top:4px}
+.duo-go{font-size:12px; font-weight:600; color:var(--navy2); white-space:nowrap}
+.duo.c .duo-go{color:var(--green)}
+.duo-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin:22px 0 18px; border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+.duo-grid div{padding:16px 0 14px}
+.duo-grid b{display:block; font-family:'Space Grotesk',sans-serif; font-size:32px; line-height:1; color:var(--accent); letter-spacing:-.02em}
+.duo.c .duo-grid b{color:var(--green)}
+.duo-grid span{display:block; margin-top:7px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--muted)}
+.duo-foot{font-size:13.5px; color:#4a4038}
+
+/* ===== weekly chart ===== */
+.chartcard{margin-top:16px; background:var(--card); border:1px solid var(--line); border-radius:20px; padding:26px; box-shadow:var(--shadow)}
+.chart-head{display:flex; justify-content:space-between; align-items:flex-end; gap:16px; flex-wrap:wrap}
+.chart-title{font-family:'Space Grotesk',sans-serif; font-size:18px; font-weight:600; margin-top:4px}
+.legend{display:flex; gap:16px; font-size:12.5px; color:#4a4038; font-weight:600}
+.dot{display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:6px}
+.dot.a,.seg.a{background:var(--accent)} .dot.c,.seg.c{background:var(--green)}
+.weeks{display:grid; grid-auto-flow:column; grid-auto-columns:1fr; gap:14px; margin-top:22px; align-items:end}
+.wk{text-align:center}
+.wk-n{font:700 15px/1 'Space Grotesk',sans-serif; margin-bottom:8px}
+.wk-bar{height:150px; display:flex; flex-direction:column; justify-content:flex-end; gap:2px;
+  background:repeating-linear-gradient(to top, transparent 0 29px, #f3ebe0 29px 30px); border-radius:8px}
+.seg{display:block; width:100%; border-radius:6px; min-height:0}
+.wk-l{margin-top:10px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--muted)}
+
+.explain{display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin-top:16px; background:var(--card); border:1px solid var(--line); border-radius:20px; box-shadow:var(--shadow)}
+.explain>div{padding:22px 24px; border-left:1px solid var(--line)}
+.explain>div:first-child{border-left:none}
+.explain p{margin:8px 0 0; font-size:13.5px; color:#4a4038}
+
+/* ===== brand band ===== */
+.brand{margin-top:72px; scroll-margin-top:50px}
+.band{position:relative; overflow:hidden; color:#fff; background:
+  radial-gradient(700px 380px at 92% -20%, rgba(249,106,22,.42), transparent 60%), #1c1611}
+.brand.c .band{background:radial-gradient(700px 380px at 92% -20%, rgba(46,125,82,.55), transparent 60%), #14201a}
+.band::after{content:""; position:absolute; inset:0; opacity:.5; pointer-events:none;
+  background-image:radial-gradient(rgba(255,255,255,.10) 1px, transparent 1.5px); background-size:23px 23px;
+  -webkit-mask-image:linear-gradient(100deg,transparent 40%,#000); mask-image:linear-gradient(100deg,transparent 40%,#000)}
+.band-in{position:relative; z-index:1; max-width:1080px; margin:0 auto; padding:52px 24px 0}
+.band-top{display:flex; justify-content:space-between; align-items:flex-end; gap:30px; flex-wrap:wrap}
+.band .eyebrow{color:rgba(255,255,255,.58)}
+.band h2{margin:6px 0 0; font-size:clamp(44px,7vw,84px); line-height:.95; letter-spacing:-.04em; font-weight:700}
+.band-procs{max-width:460px}
+.band-procs>div:last-child{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px}
+.proc{font-size:12.5px; font-weight:600; padding:5px 11px; border-radius:999px; background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.16)}
+.band-stats{display:grid; grid-template-columns:repeat(4,1fr); margin-top:40px; border-top:1px solid rgba(255,255,255,.14)}
+.band-stats div{padding:24px 18px 30px 0}
+.band-stats b{display:block; font-family:'Space Grotesk',sans-serif; font-size:44px; line-height:1; letter-spacing:-.03em; color:#ffb27d}
+.brand.c .band-stats b{color:#8fdcb0}
+.band-stats span{display:block; margin-top:9px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.09em}
+.band-stats em{display:block; margin-top:4px; font-style:normal; font-size:12.5px; color:rgba(255,255,255,.58)}
+
+/* ===== coverage ===== */
+.cov{margin-top:22px; background:var(--card); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow); overflow:hidden}
+.cov-head{display:grid; grid-template-columns:1fr 360px; padding:12px 22px; background:#1c1611; color:#fff; font-size:12px; font-weight:600; letter-spacing:.03em}
+.cov-row{display:grid; grid-template-columns:1fr 300px 60px; align-items:center; padding:14px 22px; border-top:1px solid var(--line); text-decoration:none; color:inherit}
+.cov-row:nth-child(odd){background:#fdf8f1}
+.cov-row:hover{background:var(--orange-soft)}
+.brand.c .cov-row:hover{background:var(--green-soft)}
+.cov-t{font-weight:600; font-size:14.5px; padding-right:16px}
+.cov-t em{display:block; font-style:normal; font-weight:500; font-size:12.5px; color:var(--muted); margin-top:2px}
+.cov-bar{display:block; height:10px; background:#f3ebe0; border-radius:999px; overflow:hidden}
+.cov-bar i{display:block; height:100%; border-radius:999px; background:linear-gradient(90deg,#ffb27d,var(--accent))}
+.brand.c .cov-bar i{background:linear-gradient(90deg,#8fdcb0,var(--green))}
+.cov-n{text-align:right; font:700 20px/1 'Space Grotesk',sans-serif}
+.cov-none{grid-column:2 / 4; font-size:12.5px; color:var(--wait); font-weight:600}
+
+.tag{display:inline-block; font-size:11px; font-weight:700; padding:3px 9px; border-radius:999px; border:1px solid var(--line); white-space:nowrap}
+.tag.cmp{margin-left:8px; background:#efeaff; color:#5a3fb5; border-color:#ddd3fb}
+.tag.wait{background:var(--wait-bg); color:var(--wait); border-color:#ecd0a6}
+.tag.own{background:#f5f0e8; color:#6e6254}
+.tag.ext{background:var(--orange-soft); color:#9a3f06; border-color:var(--orange-line)}
+.brand.c .tag.ext{background:var(--green-soft); color:var(--green); border-color:var(--green-line)}
+
+/* ===== post cards ===== */
+.card{background:var(--card); border:1px solid var(--line); border-radius:20px; margin-top:22px; overflow:hidden; box-shadow:var(--shadow); scroll-margin-top:64px}
+.card-head{padding:26px 28px 24px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fcfaf7,#fff)}
+.card-meta{font-size:13px; color:var(--muted); display:flex; align-items:center; gap:9px; flex-wrap:wrap}
+.card-meta .sub{color:var(--navy2); font-weight:700}
+.card.c .card-meta .sub{color:var(--green)}
+.card-meta .sep{color:#d8cab8}
+.pill{margin-left:auto; background:var(--orange-soft); color:#c2570e; border:1px solid var(--orange-line); font-size:12px; font-weight:700; padding:4px 12px; border-radius:999px}
+.card.c .pill{background:var(--green-soft); color:var(--green); border-color:var(--green-line)}
+.pill.cmp,.card.c .pill.cmp{background:#efeaff; color:#5a3fb5; border-color:#ddd3fb}
+.ptitle{margin:12px 0 0; font-size:clamp(22px,3vw,30px); line-height:1.15; letter-spacing:-.02em}
+.ptitle a{color:var(--ink); text-decoration:none}
+.ptitle a:hover{color:var(--navy2)}
+.ptitle .ar{color:var(--muted)}
+.pstats{display:flex; flex-wrap:wrap; gap:10px; margin-top:20px}
+.pstat{border:1px solid var(--line); border-radius:12px; padding:12px 16px; min-width:132px; background:#fff}
+.pstat:first-child{background:var(--navy); border-color:var(--navy)}
+.pstat:first-child b{color:#ffb27d} .pstat:first-child span{color:rgba(255,255,255,.7)}
+.card.c .pstat:first-child b{color:#8fdcb0}
+.pstat b{display:block; font:700 26px/1 'Space Grotesk',sans-serif; color:var(--navy)}
+.pstat span{display:block; margin-top:6px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--muted)}
+.kw-row{display:flex; flex-wrap:wrap; align-items:center; gap:7px; margin-top:20px}
+.kw-label{font-size:10.5px; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); font-weight:700; width:100%}
+.kw{background:var(--orange-soft); color:#9a3f06; border:1px solid var(--orange-line); padding:5px 12px; border-radius:999px; font-size:13px; font-weight:600}
+.card.c .kw{background:var(--green-soft); color:#1f5c3b; border-color:var(--green-line)}
+
+.gallery{padding:22px 28px 28px}
+.gal-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:14px}
+.gal-hint{font-size:12.5px; color:var(--muted)}
+.tiles{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+.tile{display:flex; flex-direction:column; text-decoration:none; color:inherit; border:1px solid var(--line); border-radius:14px; overflow:hidden; background:#fff;
+  transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease}
+.tile:hover{transform:translateY(-3px); box-shadow:var(--shadow-lg); border-color:var(--orange-line)}
+.tile-img{display:block; aspect-ratio:16/10; overflow:hidden; background:#f3ebe0; border-bottom:1px solid var(--line)}
+.tile-img img{width:100%; height:100%; object-fit:cover; object-position:left top; display:block}
+.tile-cap{display:block; padding:12px 14px 14px}
+.tile-pl{display:block; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--green)}
+.tile-kw{display:block; margin-top:4px; font-size:14px; font-weight:600; line-height:1.35}
+.tile-note{display:block; margin-top:8px; font-size:12px; line-height:1.4; color:#7a4a0c; background:var(--wait-bg); border-radius:8px; padding:7px 9px}
+
+.quiet{margin-top:22px; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 22px 8px; box-shadow:var(--shadow)}
+.quiet-row{display:grid; grid-template-columns:1fr auto auto; gap:14px; align-items:center; padding:13px 0; border-top:1px solid var(--line); text-decoration:none; color:inherit; margin-top:0}
+.quiet .eyebrow{margin-bottom:12px}
+.quiet-t{font-weight:600; font-size:14.5px}
+.quiet-m{font-size:12.5px; color:var(--muted)}
+
+/* ===== comments ===== */
+.subchips{display:flex; flex-wrap:wrap; gap:8px; margin-top:20px}
+.subchip{font-size:13px; font-weight:600; background:#fff; border:1px solid var(--line); border-radius:999px; padding:6px 6px 6px 13px; display:inline-flex; align-items:center; gap:8px}
+.subchip b{background:var(--navy); color:#fff; font:700 11.5px/1 'Space Grotesk',sans-serif; border-radius:999px; padding:5px 8px}
+.table-wrap{background:var(--card); border:1px solid var(--line); border-radius:16px; overflow:hidden; margin-top:16px; box-shadow:var(--shadow)}
+table{width:100%; border-collapse:collapse; font-size:14px}
+thead th{background:#1c1611; color:#fff; text-align:left; font-weight:600; padding:13px 16px; font-size:12.5px; letter-spacing:.03em}
+tbody td{padding:12px 16px; border-top:1px solid var(--line); vertical-align:middle}
+tbody tr:nth-child(even){background:#fdf8f1}
+td.num{color:var(--muted); width:48px; font-weight:600}
+td.date{color:var(--muted); white-space:nowrap; width:74px}
+.sub-sm{color:var(--navy2); font-weight:700; white-space:nowrap; width:100%}
+.brand.c .sub-sm{color:var(--green)}
+td.ctitle{font-weight:600}
+.repcell a{color:var(--navy2); font-weight:600; text-decoration:none; white-space:nowrap}
+.brand.c .repcell a{color:var(--green)}
+
+/* ===== footer ===== */
+footer{max-width:1080px; margin:80px auto 0; padding:0 24px 66px; color:var(--muted); font-size:13px; scroll-margin-top:60px}
+.m81card{position:relative; overflow:hidden; background:#fff; border-radius:30px; border:1px solid rgba(249,106,22,.18);
+  box-shadow:0 0 0 7px rgba(249,106,22,.04), 0 36px 90px rgba(249,106,22,.18); padding:46px 50px 42px; min-height:480px}
+.m81card-inner{position:relative; z-index:2}
+.m81-lock{display:flex; align-items:center; gap:11px}
+.m81-lock img{height:36px; width:auto}
+.m81-lock .bname{font-family:'Space Grotesk',sans-serif; font-size:32px; font-weight:700; color:#111}
+.m81-watermark{position:absolute; left:0; right:0; bottom:34px; z-index:1; margin:0; text-align:center; font-family:'Space Grotesk',sans-serif;
+  font-weight:700; font-size:clamp(44px,12vw,150px); line-height:.82; letter-spacing:-.02em; color:#e9e4de; white-space:nowrap; pointer-events:none}
+.m81-method{margin-top:24px; border-top:1px solid #f0e8df; padding-top:22px}
+.fineprint{color:#9a8c7c; font-size:14.5px; line-height:1.7; margin:0 0 16px}
+.fineprint strong{color:#5b4f42}
+.src{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
+.src span{background:#fbf6ef; border:1px solid #efe2d3; border-radius:8px; padding:7px 13px}
+
+/* ===== lightbox ===== */
+.lb{position:fixed; inset:0; z-index:100; background:rgba(20,15,11,.92); display:grid; place-items:center; padding:64px 70px 28px}
+.lb[hidden]{display:none}
+.lb figure{margin:0; max-width:1400px; width:100%; max-height:100%; display:flex; flex-direction:column; gap:14px}
+.lb figcaption{color:#fff; display:flex; align-items:baseline; gap:12px; flex-wrap:wrap}
+.lb figcaption span{font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#8fdcb0}
+.lb figcaption b{font:600 19px/1.2 'Space Grotesk',sans-serif}
+.lb figcaption em{margin-left:auto; font-style:normal; font-size:12.5px; color:rgba(255,255,255,.55)}
+.lb img{width:100%; max-height:calc(100vh - 150px); object-fit:contain; border-radius:12px; background:#111}
+.lb button{position:absolute; border:1px solid rgba(255,255,255,.25); background:rgba(255,255,255,.08); color:#fff; border-radius:999px;
+  font:600 13px/1 'Space Grotesk',sans-serif; padding:11px 16px; cursor:pointer}
+.lb button:hover{background:rgba(255,255,255,.18)}
+.lb-x{top:18px; right:22px} .lb-prev{left:14px; top:50%} .lb-next{right:14px; top:50%}
+
+@media (max-width:900px){
+  .herostats{grid-template-columns:repeat(3,1fr)} .herostats div:nth-child(4){border-left:none} .herostats div:nth-child(n+4){border-top:1px solid #efe2d3}
+  .metrics{grid-template-columns:repeat(2,1fr)} .duos{grid-template-columns:1fr}
+  .band-stats{grid-template-columns:repeat(2,1fr)} .tiles{grid-template-columns:repeat(2,1fr)}
+  .explain{grid-template-columns:1fr} .explain>div{border-left:none; border-top:1px solid var(--line)} .explain>div:first-child{border-top:none}
+  .cov-head{grid-template-columns:1fr auto} .cov-row{grid-template-columns:1fr 90px 40px}
+}
+@media (max-width:620px){
+  .hero{padding:28px 16px 40px} .wrap{padding:36px 16px 10px} .band-in{padding:40px 16px 0} footer{padding:0 16px 50px}
+  .brandrow .for{display:none}
+  .herostats{grid-template-columns:repeat(2,1fr)} .herostats div:nth-child(odd){border-left:none} .herostats div:nth-child(4){border-left:1px solid #efe2d3} .herostats div:nth-child(n+3){border-top:1px solid #efe2d3}
+  .metrics{grid-template-columns:1fr} .duo-grid{grid-template-columns:repeat(2,1fr)}
+  .band-stats{grid-template-columns:repeat(2,1fr)} .tiles{grid-template-columns:1fr}
+  .card-head{padding:20px 18px} .gallery{padding:18px} .pill{margin-left:0}
+  .cov-row{grid-template-columns:1fr 40px} .cov-bar{display:none} .cov-none{grid-column:1 / 3}
+  .quiet-row{grid-template-columns:1fr}
+  thead{display:none} table,tbody,tr,td{display:block; width:100%} tbody td{border:none; padding:3px 16px} tbody tr{border-top:1px solid var(--line); padding:9px 0} td.num{display:none}
+  .m81card{padding:32px 24px; min-height:320px; border-radius:22px} .lb{padding:60px 10px 20px} .lb-prev,.lb-next{top:auto; bottom:10px}
+}
+@media print{ body{background:#fff} .topnav,.lb{display:none} .card,.metric,.duo{box-shadow:none} }
+
+/* ===== footprint panel ===== */
+.fp{margin-top:16px; display:grid; grid-template-columns:1.15fr 1fr; background:var(--card); border:1px solid var(--line); border-radius:20px; box-shadow:var(--shadow)}
+.fp-col{padding:26px}
+.fp-col+.fp-col{border-left:1px solid var(--line)}
+.fp-head{display:flex; justify-content:space-between; align-items:flex-end; gap:14px; flex-wrap:wrap; margin-bottom:16px}
+.fp-row{display:grid; grid-template-columns:170px 1fr 28px; align-items:center; gap:12px; padding:5px 0}
+.fp-sub{font-size:13px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.fp-bar{display:flex; gap:2px; height:12px}
+.fp-bar .seg{height:100%; border-radius:4px}
+.fp-n{font:700 14px/1 'Space Grotesk',sans-serif; text-align:right}
+.pl-bar{display:flex; gap:3px; height:22px; margin-top:18px}
+.pl-bar i{display:block; border-radius:6px}
+.p1{background:var(--navy)} .p2{background:var(--accent)} .p3{background:#f3c49f}
+.pl-leg{display:flex; flex-wrap:wrap; gap:18px 26px; margin-top:16px}
+.pl-item{display:grid; grid-template-columns:auto auto; justify-content:start; column-gap:8px; align-items:baseline}
+.pl-item .sw{width:10px; height:10px; border-radius:3px; display:inline-block}
+.pl-item b{font:700 26px/1 'Space Grotesk',sans-serif}
+.pl-item span{grid-column:1 / 3; margin-top:4px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--muted)}
+.procchips{display:flex; flex-wrap:wrap; gap:6px; margin-top:12px}
+.procchip{font-size:12.5px; font-weight:600; padding:5px 11px; border-radius:999px; background:#f7f1e8; border:1px solid var(--line)}
+@media (max-width:900px){ .fp{grid-template-columns:1fr} .fp-col+.fp-col{border-left:none; border-top:1px solid var(--line)} .fp-row{grid-template-columns:130px 1fr 28px} }
+
+/* ===== ledger post cards ===== */
+.oh{display:flex; justify-content:space-between; align-items:flex-end; gap:24px; padding:26px 28px 22px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fcfaf7,#fff)}
+.oh .card-meta .pill{margin-left:4px}
+.oh-n{display:flex; align-items:center; gap:10px; flex:none}
+.oh-n b{font:700 58px/.9 'Space Grotesk',sans-serif; color:var(--accent); letter-spacing:-.04em}
+.card.c .oh-n b{color:var(--green)}
+.oh-n span{font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); line-height:1.35}
+.card .lg-head,.card .lg-row{display:grid; grid-template-columns:44px 1fr 132px 130px; align-items:center; gap:16px; padding:10px 28px}
+.lg-head{font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); border-bottom:1px solid var(--line); background:#fdfaf6}
+.lg-row{text-decoration:none; color:inherit; border-top:1px solid var(--line); transition:background .12s}
+.lg-head+.lg-row{border-top:none}
+.lg-row:hover{background:var(--orange-soft)} .card.c .lg-row:hover{background:var(--green-soft)}
+.lg-i{font:600 13px/1 'Space Grotesk',sans-serif; color:var(--muted)}
+.lg-k{font-weight:600; font-size:15.5px; line-height:1.35}
+.lg-k em{display:block; font-style:normal; font-weight:500; font-size:12.5px; color:#7a4a0c; margin-top:3px}
+.lg-t img{width:132px; height:76px; object-fit:cover; object-position:left top; border-radius:8px; border:1px solid var(--line); display:block; transition:transform .16s, box-shadow .16s}
+.lg-row:hover .lg-t img{transform:scale(1.04); box-shadow:var(--shadow-lg)}
+.lg-v{font-size:13px; font-weight:600; color:var(--navy2); text-align:right; white-space:nowrap} .card.c .lg-v{color:var(--green)}
+@media (max-width:620px){
+  .oh{flex-direction:column; align-items:flex-start; padding:20px 18px} .oh-n b{font-size:40px}
+  .card .lg-head{display:none} .card .lg-row{grid-template-columns:26px 1fr 92px; gap:10px; padding:12px 18px} .lg-v{display:none} .lg-t img{width:92px; height:54px}
+}
+.band-jump{display:inline-block; margin-top:8px; font-size:12px; font-weight:600; color:#ffb27d; text-decoration:none; border-bottom:1px solid rgba(255,178,125,.4)}
+.brand.c .band-jump{color:#8fdcb0; border-color:rgba(143,220,176,.4)}
+.block[id$="-comments"]{scroll-margin-top:60px}
+
+.lb figcaption em{margin-left:auto}
+
+/* ===== explainer panel ===== */
+.approach{position:relative; overflow:hidden; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:28px 30px; margin-top:22px; box-shadow:var(--shadow); scroll-margin-top:64px}
+.approach::before{content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:var(--accent)}
+.approach-lead{margin:0 0 20px; font-family:'Space Grotesk',sans-serif; font-size:18.5px; line-height:1.44; font-weight:600; letter-spacing:-.01em; max-width:70ch}
+.approach-label{display:block; margin-bottom:12px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.11em; color:var(--muted)}
+.steps{list-style:none; counter-reset:st; margin:0 0 20px; padding:0; display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+.steps li{counter-increment:st; position:relative; background:#fdf8f1; border:1px solid var(--line); border-radius:12px; padding:44px 16px 16px; font-size:14px; line-height:1.5; color:#4a4038}
+.steps li::before{content:counter(st, decimal-leading-zero); position:absolute; top:14px; left:16px; font:700 13px/1 'Space Grotesk',sans-serif; color:var(--accent); letter-spacing:.06em}
+.steps li b{color:var(--ink)}
+.approach-close{margin:0; padding-top:18px; border-top:1px solid var(--line); font-size:15px; line-height:1.6; color:#4a4038; max-width:80ch}
+.approach-close strong{color:var(--ink)}
+@media (max-width:760px){ .approach{padding:22px 20px} .approach-lead{font-size:17px} .steps{grid-template-columns:1fr} }
+
+.lb-stage{position:relative; min-height:320px; display:grid; place-items:center; border-radius:12px; background:#111}
+.lb-stage img{position:relative; z-index:1; transition:opacity .2s}
+.lb.loading .lb-stage img,.lb.failed .lb-stage img{opacity:0}
+.lb-msg{position:absolute; inset:0; display:none; place-items:center; text-align:center; padding:20px; color:rgba(255,255,255,.7); font:600 14px/1.5 'Space Grotesk',sans-serif}
+.lb.loading .lb-wait,.lb.failed .lb-fail{display:grid}
+.lb.loading .lb-wait::after{content:""; width:22px; height:22px; margin-left:12px; border-radius:50%; border:2px solid rgba(255,255,255,.25); border-top-color:#ffb27d; animation:lbspin .8s linear infinite}
+.lb.loading .lb-wait{display:flex; justify-content:center; align-items:center}
+@keyframes lbspin{to{transform:rotate(360deg)}}
+
+.fp.one{grid-template-columns:1fr}
+
+/* ===== looking ahead ===== */
+#ahead{scroll-margin-top:60px; padding-top:24px}
+.signoff{position:relative; overflow:hidden; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:30px 32px; margin-top:22px; box-shadow:var(--shadow); display:flex; align-items:center; gap:32px; flex-wrap:wrap}
+.signoff::before{content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:var(--accent)}
+.signoff-text{flex:1 1 430px; font-size:15.5px; line-height:1.64; color:#4a4038}
+.signoff-text p{margin:0 0 14px} .signoff-text p:last-child{margin:0}
+.notion-btn{flex:0 0 auto; display:inline-flex; align-items:center; gap:14px; text-decoration:none; background:var(--navy); border:1px solid var(--navy); border-radius:12px; padding:15px 22px; transition:background .15s ease, transform .15s ease}
+.notion-btn:hover{background:#2f2620; transform:translateY(-1px)}
+.notion-btn svg:first-child{width:23px; height:23px; fill:#fff; flex:none}
+.notion-btn .nb-t{display:block; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:14.5px; line-height:1.2; color:#fff; letter-spacing:-.01em}
+.notion-btn .nb-s{display:block; margin-top:4px; font-size:12px; color:#bdb0a2}
+.notion-btn .nb-go{color:#bdb0a2; font-size:15px; margin-left:4px} .notion-btn .nb-go .ar{width:14px; height:14px}
+@media (max-width:760px){ .signoff{padding:24px 20px; gap:22px} .notion-btn{width:100%; justify-content:center} }
+
+/* ================= Mack Weldon cycle 01 additions ================= */
+:root{ --n:#1c1611; }
+.dot.n,.seg.n{background:var(--navy)}
+.acc{color:var(--accent)}
+
+/* hero reach feature */
+.hero h1 i{font-size:.9em}
+.reach{display:grid; grid-template-columns:1.15fr 1fr; gap:0; margin:0 0 26px; background:rgba(255,255,255,.74);
+  border:1px solid #efe2d3; border-radius:24px; backdrop-filter:blur(8px); box-shadow:var(--shadow-lg); overflow:hidden}
+.reach-main{padding:30px 32px 26px; position:relative}
+.reach-main::after{content:""; position:absolute; right:-120px; bottom:-160px; width:360px; height:360px; border-radius:50%;
+  background:radial-gradient(circle, rgba(249,106,22,.14), transparent 66%); pointer-events:none}
+.reach-n{font:700 clamp(64px,10vw,124px)/.9 'Space Grotesk',sans-serif; letter-spacing:-.05em; margin-top:12px;
+  background:linear-gradient(100deg,#1c1611 30%,#c2570e 75%,#f96a16); -webkit-background-clip:text; background-clip:text; color:transparent}
+.reach-sub{margin-top:12px; font-size:15px; color:#4a4038}
+.reach-sub b{color:var(--ink)}
+.reach-strip{display:flex; gap:3px; height:14px; margin-top:22px; border-radius:999px; overflow:hidden}
+.reach-strip i{display:block; min-width:4px}
+.reach-leg{margin-top:10px; font-size:12.5px; color:var(--muted)}
+.reach-leg b{color:#4a4038; font-weight:600}
+.reach .herostats{grid-template-columns:1fr 1fr; margin:0; border:none; border-left:1px solid #efe2d3; border-radius:0; background:transparent; box-shadow:none; backdrop-filter:none}
+.reach .herostats div{padding:24px 24px 22px; border-left:1px solid #efe2d3}
+.reach .herostats div:nth-child(odd){border-left:none}
+.reach .herostats div:nth-child(n+3){border-top:1px solid #efe2d3}
+.reach .herostats b{font-size:clamp(34px,4vw,50px)}
+.reach .herostats b small{font-size:.5em; color:var(--muted); letter-spacing:0; margin-left:2px}
+.reach .herostats em{display:block; margin-top:5px; font-style:normal; font-size:12.5px; color:var(--muted)}
+
+/* glance cards */
+.chartcard .eyebrow + .chart-title{margin-bottom:4px}
+.cardnote{margin:18px 0 0; font-size:12.5px; color:var(--muted); line-height:1.5}
+.vbs{margin-top:20px}
+.vb{display:grid; grid-template-columns:minmax(0,1.25fr) 2fr 64px 104px; gap:16px; align-items:center; padding:10px 0; border-top:1px solid var(--line); text-decoration:none; color:inherit}
+.vb:first-child{border-top:none}
+.vb:hover .vb-t{color:var(--navy2)}
+.vb-t{font-weight:600; font-size:14px; line-height:1.3; min-width:0}
+.vb-t em{display:block; font-style:normal; font-weight:500; font-size:12px; color:var(--muted); margin-top:2px}
+.vb-bar{display:block; height:18px; background:#f6efe5; border-radius:6px; overflow:hidden}
+.vb-bar i{display:block; height:100%; border-radius:6px}
+.vb-n{font:700 19px/1 'Space Grotesk',sans-serif; text-align:right}
+.vb-r{text-align:left}
+.rk{display:inline-block; font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; white-space:nowrap; background:#f5f0e8; color:#6e6254; border:1px solid var(--line)}
+.rk.r1{background:#1c1611; color:#ffcf6e; border-color:#1c1611}
+.rk.r2,.rk.r3{background:var(--orange-soft); color:#9a3f06; border-color:var(--orange-line)}
+
+.duo2{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:16px; margin-top:16px}
+.duo2 .chartcard{margin-top:0}
+.rcs{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin-top:20px}
+.rc{display:flex; flex-direction:column; text-decoration:none; color:inherit; border:1px solid var(--line); border-radius:14px; padding:14px 14px 13px; background:#fdfaf6; transition:transform .15s, box-shadow .15s}
+.rc:hover{transform:translateY(-2px); box-shadow:var(--shadow-lg)}
+.rc b{font:700 34px/1 'Space Grotesk',sans-serif; letter-spacing:-.03em; color:var(--muted)}
+.rc span{margin-top:8px; font-size:11px; font-weight:700; color:var(--navy2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.rc em{margin-top:3px; font-style:normal; font-size:11.5px; color:var(--muted); line-height:1.3; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden}
+.rc.hot{background:var(--orange-soft); border-color:var(--orange-line)} .rc.hot b{color:var(--accent)}
+.rc.gold{background:#1c1611; border-color:#1c1611} .rc.gold b{color:#ffcf6e} .rc.gold span{color:#ffb27d} .rc.gold em{color:rgba(255,255,255,.62)}
+.au-big{display:flex; align-items:baseline; gap:10px; margin-top:16px}
+.au-big b{font:700 40px/1 'Space Grotesk',sans-serif; letter-spacing:-.03em}
+.au-big span{font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.09em; color:var(--muted)}
+.aus{margin-top:14px}
+.au{display:grid; grid-template-columns:minmax(0,1.35fr) 1fr 40px; gap:12px; align-items:center; padding:4px 0}
+.au-t{font-size:12.5px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.au-bar{height:8px; background:#f3ebe0; border-radius:999px; overflow:hidden}
+.au-bar i{display:block; height:100%; border-radius:999px; background:linear-gradient(90deg,#ffb27d,var(--accent))}
+.au-n{font:700 13px/1 'Space Grotesk',sans-serif; text-align:right}
+.ths{margin-top:18px}
+.th{display:grid; grid-template-columns:190px 1fr 34px; gap:12px; align-items:center; padding:7px 0}
+.th-t{font-size:13.5px; font-weight:600; display:flex; align-items:center; gap:8px; white-space:nowrap}
+.th-t i{width:10px; height:10px; border-radius:3px; flex:none}
+.th-bar{height:12px; background:#f3ebe0; border-radius:999px; overflow:hidden}
+.th-bar i{display:block; height:100%; border-radius:999px}
+.th-n{font:700 17px/1 'Space Grotesk',sans-serif; text-align:right}
+.procchips{margin-top:18px}
+
+.fp{grid-template-columns:1.1fr 1fr}
+.fp-row{grid-template-columns:180px 1fr 28px}
+.days{display:grid; grid-template-columns:repeat(28,1fr); gap:3px; align-items:end; margin-top:8px}
+.day{display:flex; flex-direction:column; align-items:center; min-width:0}
+.day-n{font:700 11px/1 'Space Grotesk',sans-serif; height:14px; color:var(--ink)}
+.day-bar{width:100%; height:170px; display:flex; flex-direction:column; justify-content:flex-end; gap:2px; border-bottom:2px solid #efe5d8}
+.day:not(.on) .day-bar{background:linear-gradient(to top,#f6efe6 0 3px,transparent 3px)}
+.day-bar .seg{width:100%; border-radius:3px; min-height:5px}
+.day-l{margin-top:6px; font-size:10.5px; color:var(--muted); font-weight:600; height:12px}
+.daylab{display:flex; justify-content:space-between; font-size:10.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-top:4px; border-top:1px solid var(--line); padding-top:6px}
+.fpstats{display:grid; grid-template-columns:repeat(3,1fr); margin-top:22px; border-top:1px solid var(--line)}
+.fpstats div{padding-top:14px}
+.fpstats b{display:block; font:700 30px/1 'Space Grotesk',sans-serif; letter-spacing:-.02em}
+.fpstats span{display:block; margin-top:6px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--muted)}
+
+/* keywords we own */
+.ownband{margin-top:72px; position:relative; overflow:hidden; color:#fff; scroll-margin-top:50px;
+  background:radial-gradient(760px 420px at 8% -10%, rgba(249,106,22,.40), transparent 60%),
+             radial-gradient(620px 420px at 100% 110%, rgba(255,207,110,.14), transparent 60%), #16110d}
+.ownband::after{content:""; position:absolute; inset:0; opacity:.5; pointer-events:none;
+  background-image:radial-gradient(rgba(255,255,255,.09) 1px, transparent 1.5px); background-size:23px 23px;
+  -webkit-mask-image:linear-gradient(200deg,#000 10%,transparent 60%); mask-image:linear-gradient(200deg,#000 10%,transparent 60%)}
+.ownband-in{position:relative; z-index:1; max-width:1080px; margin:0 auto; padding:64px 24px 70px}
+.ownband .eyebrow{color:#ffb27d}
+.ownband h2{margin:12px 0 0; font-size:clamp(30px,4.6vw,54px); line-height:1.02; letter-spacing:-.035em; max-width:19ch}
+.ownband h2 span{font-family:'Instrument Serif',serif; font-style:italic; font-weight:400; color:#ffb27d; letter-spacing:-.01em}
+.own-lead{margin:18px 0 0; max-width:66ch; color:rgba(255,255,255,.72); font-size:15.5px; line-height:1.6}
+.own-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:34px}
+.own-c{background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); border-radius:20px; overflow:hidden; display:flex; flex-direction:column}
+.own-img{position:relative; display:block; aspect-ratio:16/10; overflow:hidden; background:#fff}
+.own-img img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .3s ease}
+.own-img:hover img{transform:scale(1.04)}
+.own-zoom{position:absolute; right:10px; bottom:10px; font-size:11.5px; font-weight:600; color:#fff; background:rgba(22,17,13,.78); border-radius:999px; padding:6px 11px}
+.own-b{padding:20px 22px 22px; display:flex; flex-direction:column; flex:1}
+.own-slots{display:flex; align-items:center; gap:5px}
+.own-slots i{width:26px; height:8px; border-radius:999px; background:linear-gradient(90deg,#ffb27d,var(--accent))}
+.own-slots span{margin-left:8px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.12em; color:#ffb27d}
+.own-b h3{margin:14px 0 0; font-size:22px; line-height:1.18; letter-spacing:-.02em}
+.own-b p{margin:8px 0 0; font-size:13.5px; line-height:1.5; color:rgba(255,255,255,.66)}
+.own-ps{margin-top:auto; padding-top:16px; display:flex; flex-direction:column; gap:6px}
+.own-p{display:grid; grid-template-columns:22px 1fr; column-gap:10px; align-items:center; text-decoration:none; color:#fff; font-size:12.5px; font-weight:600; line-height:1.3;
+  background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.10); border-radius:10px; padding:8px 10px}
+.own-p:hover{background:rgba(255,255,255,.12)}
+.own-p span{grid-row:1 / 3; width:22px; height:22px; border-radius:50%; background:var(--accent); color:#16110d; display:grid; place-items:center; font:700 11px/1 'Space Grotesk',sans-serif}
+.own-p em{font-style:normal; font-weight:500; font-size:11px; color:rgba(255,255,255,.5)}
+.dbl-head{margin-top:38px; padding-top:22px; border-top:1px solid rgba(255,255,255,.12)}
+.dbl-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:14px}
+.dbl{display:flex; flex-direction:column; text-decoration:none; color:#fff; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); border-radius:16px; overflow:hidden; transition:transform .16s, border-color .16s}
+.dbl:hover{transform:translateY(-3px); border-color:rgba(255,178,125,.5)}
+.dbl-img{display:block; aspect-ratio:16/10; overflow:hidden; background:#fff}
+.dbl-img img{width:100%; height:100%; object-fit:cover; display:block}
+.dbl-b{display:block; padding:14px 16px 16px}
+.dbl-b b{display:block; margin-top:10px; font:600 15px/1.3 'Space Grotesk',sans-serif}
+.dbl-b em{display:block; margin-top:6px; font-style:normal; font-size:11.5px; color:rgba(255,255,255,.55)}
+.own-slots.sm i{width:18px; height:6px}
+
+/* post band tweaks */
+.brand{margin-top:0}
+.band h2{font-size:clamp(40px,6.4vw,76px)}
+
+/* post cards */
+.post{scroll-margin-top:64px}
+.ph{display:grid; grid-template-columns:230px 1fr; gap:30px; padding:28px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fcfaf7,#fff)}
+.ins{position:relative; display:block; aspect-ratio:9/13; border-radius:18px; overflow:hidden; background:#0e1113; border:5px solid #1c1611;
+  box-shadow:0 18px 40px rgba(28,22,17,.18); transition:transform .2s ease}
+.ins:hover{transform:translateY(-3px) rotate(-.4deg)}
+.ins img{width:100%; height:100%; object-fit:cover; object-position:center top; display:block}
+.ins.wide img{object-fit:contain; object-position:center 18%}
+.ins-cap{position:absolute; left:8px; right:8px; bottom:8px; text-align:center; font-size:11px; font-weight:600; color:#fff; background:rgba(14,17,19,.82); border-radius:999px; padding:6px 8px; backdrop-filter:blur(4px)}
+.ph-b{min-width:0; display:flex; flex-direction:column}
+.pnum{font:700 11px/1 'Space Grotesk',sans-serif; letter-spacing:.12em; text-transform:uppercase; color:var(--tc); background:color-mix(in srgb, var(--tc) 10%, #fff); border:1px solid color-mix(in srgb, var(--tc) 25%, #fff); padding:5px 9px; border-radius:999px}
+.post .pill{margin-left:auto; background:color-mix(in srgb, var(--tc) 10%, #fff); color:color-mix(in srgb, var(--tc) 80%, #000); border-color:color-mix(in srgb, var(--tc) 28%, #fff)}
+.ribbon{align-self:flex-start; display:inline-flex; align-items:center; gap:10px; margin-top:16px; font-size:13.5px; font-weight:600; color:#4a4038;
+  background:#fff; border:1px solid var(--line); border-radius:12px; padding:9px 14px 9px 10px}
+.ribbon b{font:700 17px/1 'Space Grotesk',sans-serif; background:var(--orange-soft); color:var(--accent); border-radius:8px; padding:6px 8px}
+.ribbon.gold{background:#1c1611; border-color:#1c1611; color:#fff}
+.ribbon.gold b{background:#ffcf6e; color:#1c1611}
+.post .pstats{margin-top:18px}
+.post .pstat{min-width:112px}
+.post .pstat:first-child{background:var(--navy); border-color:var(--navy)}
+.pnote{margin:16px 0 0; font-size:13.5px; color:#4a4038; background:#fdf8f1; border-left:3px solid var(--tc); border-radius:0 10px 10px 0; padding:10px 14px}
+.card .lg-head,.card .lg-row{grid-template-columns:36px 1fr 170px 136px 60px; gap:16px; padding:10px 28px}
+.lg-t img{width:136px; height:85px; object-fit:cover; object-position:center}
+.lg-k .also{display:block; width:max-content; margin-top:6px; font-style:normal; font-size:11px; font-weight:700; color:#9a3f06; background:var(--orange-soft); border:1px solid var(--orange-line); border-radius:999px; padding:3px 10px}
+.lg-k .also::before{content:""; display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--accent); margin-right:6px; vertical-align:1px}
+.lg-s{font-size:11.5px; font-weight:700; line-height:1.25; padding:5px 10px; border-radius:999px; justify-self:start; border:1px solid var(--line); background:#f7f1e8; color:#6e6254}
+.lg-s.sC{background:var(--orange-soft); color:#9a3f06; border-color:var(--orange-line)}
+.lg-s.sD{background:#1c1611; color:#fff; border-color:#1c1611}
+.lg-s.sA{background:var(--green-soft); color:var(--green); border-color:var(--green-line)}
+.cov-n{color:var(--accent)}
+
+/* comments */
+.subchip b{background:var(--accent)}
+
+/* ahead */
+.ahead-k{flex:0 0 260px; background:#fdf8f1; border:1px solid var(--line); border-radius:14px; padding:18px 18px 10px}
+.ahead-k .eyebrow{margin-bottom:10px}
+.ak{display:flex; align-items:center; gap:9px; padding:8px 0; border-top:1px solid var(--line); font-size:13.5px; font-weight:600}
+.ak i{width:10px; height:10px; border-radius:3px; flex:none}
+.ak b{margin-left:auto; font:700 16px/1 'Space Grotesk',sans-serif}
+
+/* lightbox: tall insight screenshots */
+.lb.tall img{max-width:520px; margin:0 auto}
+.lb.tall figure{max-width:560px}
+
+@media (max-width:900px){
+  .reach{grid-template-columns:1fr} .reach .herostats{border-left:none; border-top:1px solid #efe2d3}
+  .duo2{grid-template-columns:1fr} .own-grid{grid-template-columns:1fr 1fr} .dbl-grid{grid-template-columns:1fr 1fr}
+  .vb{grid-template-columns:minmax(0,1fr) 1.2fr 56px} .vb-r{display:none}
+  .card .lg-head,.card .lg-row{grid-template-columns:30px 1fr 150px 110px} .lg-v{display:none} .lg-t img{width:110px; height:69px}
+  .ph{grid-template-columns:180px 1fr; gap:22px}
+}
+@media (max-width:620px){
+  .reach{grid-template-columns:minmax(0,1fr)} .reach .herostats span{white-space:normal}
+  .post .pstats{display:grid; grid-template-columns:1fr 1fr} .post .pstat{min-width:0}
+  .reach-main{padding:24px 20px 22px} .reach .herostats div{padding:18px 18px 16px}
+  .own-grid,.dbl-grid{grid-template-columns:1fr} .ownband-in{padding:48px 16px 54px}
+  .rcs{grid-template-columns:repeat(2,1fr)}
+  .vb{grid-template-columns:1fr 56px; gap:6px 12px} .vb-bar{grid-column:1 / 3; grid-row:2; height:12px}
+  .th{grid-template-columns:1fr 34px} .th-bar{grid-column:1 / 3; grid-row:2}
+  .fp-row{grid-template-columns:130px 1fr 28px}
+  .days{gap:2px} .day-bar{height:120px} .day-n{font-size:9px} .day-l{font-size:9px}
+  .ph{grid-template-columns:1fr; padding:20px 18px} .ins{width:62%; max-width:240px; justify-self:center}
+  .post .pill{margin-left:0}
+  .card .lg-head{display:none} .card .lg-row{grid-template-columns:1fr 92px; gap:8px 12px; padding:12px 18px}
+  .lg-i{display:none} .lg-s{grid-row:2; grid-column:1} .lg-t{grid-row:1 / 3; grid-column:2} .lg-t img{width:92px; height:58px}
+  .ahead-k{flex-basis:100%}
+}
+
+.chartcard .pl-leg{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:18px}
+.chartcard .pl-item{display:flex; flex-direction:column; gap:0}
+.chartcard .pl-item .sw{width:22px; height:6px; border-radius:999px}
+.chartcard .pl-item b{margin-top:10px}
+.chartcard .pl-item span{margin-top:6px; line-height:1.35}
+@media (max-width:620px){ .chartcard .pl-leg{grid-template-columns:1fr 1fr} }
+</style></head><body>
+
+<header class="hero"><div class="hero-rings"></div><div class="hero-inner">
+  <div class="brandrow"><img class="brandmark" src="m81-logo.png" alt="M81"><div class="bl1"><b>M81</b></div><span class="for">Prepared for Mack Weldon</span></div>
+  <div class="kicker">Cycle 01 &nbsp;·&nbsp; Reddit report</div>
+  <h1>Mack Weldon<br><i>on</i> <span class="hl">Reddit</span></h1>
+  <p class="claim">Every post and branded comment that went live for Mack Weldon this cycle, how far those threads travelled on Reddit, and every Google search where they now sit on page one. Each ranking is backed by a live results-page capture.</p>
+  <div class="reach">
+    <div class="reach-main">
+      <div class="eyebrow">Total views on our threads</div>
+      <div class="reach-n">1.02M</div>
+      <div class="reach-sub">across 8 posts in four weeks &nbsp;·&nbsp; <b>62%</b> from the United States</div>
+      <div class="reach-strip"><i style="flex:683000;background:#f96a16" title="Most comfortable men&#x27;s underwear you&#x27;ve ever worn?: 683K views"></i><i style="flex:101000;background:#d99a1e" title="Best anti-odor t-shirts for travel?: 101K views"></i><i style="flex:86900;background:#c2410c" title="Best underwear if you sweat a lot?: 86.9K views"></i><i style="flex:51000;background:#f96a16" title="Best boxer briefs for men?: 51K views"></i><i style="flex:32800;background:#f96a16" title="What boxer brief brand do you guys actually swear by?: 32.8K views"></i><i style="flex:29600;background:#c2410c" title="Best men&#x27;s underwear for sweating in hot weather?: 29.6K views"></i><i style="flex:27000;background:#1c1611" title="Best sweatpants or joggers for men in 2026?: 27K views"></i><i style="flex:12300;background:#2e7d52" title="Best quick-drying underwear for travel?: 12.3K views"></i></div>
+      <div class="reach-leg">Views by post. One thread, <b>“Most comfortable men&#x27;s underwear you&#x27;ve ever worn?”</b>, reached 683K on its own.</div>
+    </div>
+    <div class="herostats">
+      <div><b>67</b><span>Google rankings</span><em>57 distinct searches</em></div>
+      <div><b>28</b><span>Branded comments</span><em>in 12 communities</em></div>
+      <div><b>5<small>/8</small></b><span>Posts in subreddit top 3</span><em>2 hit #1 the day they went up</em></div>
+      <div><b>8</b><span>Posts live</span><em>5 product themes</em></div>
+    </div>
+  </div>
+  <p class="prepared">29 Aug to 25 Sep 2026 &nbsp;·&nbsp; Google &nbsp;·&nbsp; United States &nbsp;·&nbsp; Rankings captured 25 Sep 2026</p>
+</div></header>
+<nav class="topnav"><div class="topnav-in"><a href="#glance">At a glance</a><a href="#own">Keywords we own</a><a href="#posts">Posts and rankings</a><a href="#comments">Branded comments</a><a href="#ahead">Looking ahead</a><a href="#method">Method</a></div></nav>
+
+<div class="wrap" id="glance">
+  <section class="block"><div class="block-head"><h2>At a glance</h2><p>Mack Weldon, 29 Aug to 25 Sep 2026. Most important first: how many people saw the threads, where they placed, and where they now rank on Google.</p></div>
+
+    <div class="chartcard">
+      <div class="chart-head"><div><div class="eyebrow">Reach on Reddit</div><div class="chart-title">1.02M views across 8 threads</div></div>
+        <div class="legend"><span><i class="dot" style="background:#f96a16"></i>Comfort & boxer briefs</span><span><i class="dot" style="background:#c2410c"></i>Sweat & hot weather</span><span><i class="dot" style="background:#2e7d52"></i>Travel & quick-dry</span><span><i class="dot" style="background:#d99a1e"></i>Anti-odor tees</span><span><i class="dot" style="background:#1c1611"></i>Sweatpants & joggers</span></div></div>
+      <div class="vbs"><a class="vb" href="#p3"><span class="vb-t">Most comfortable men&#x27;s underwear you&#x27;ve ever worn?<em>r/malefashionadvice · 20 Sep</em></span><span class="vb-bar"><i style="width:100.0%;background:#f96a16"></i></span><span class="vb-n">683K</span><span class="vb-r"><span class="rk r1">#1 in sub</span></span></a><a class="vb" href="#p8"><span class="vb-t">Best anti-odor t-shirts for travel?<em>r/onebag · 25 Sep</em></span><span class="vb-bar"><i style="width:14.8%;background:#d99a1e"></i></span><span class="vb-n">101K</span><span class="vb-r"><span class="rk r2">#2 in sub</span></span></a><a class="vb" href="#p1"><span class="vb-t">Best underwear if you sweat a lot?<em>r/malefashionadvice · 4 Sep</em></span><span class="vb-bar"><i style="width:12.7%;background:#c2410c"></i></span><span class="vb-n">86.9K</span><span class="vb-r"></span></a><a class="vb" href="#p6"><span class="vb-t">Best boxer briefs for men?<em>r/mensfashionadvice · 25 Sep</em></span><span class="vb-bar"><i style="width:7.5%;background:#f96a16"></i></span><span class="vb-n">51K</span><span class="vb-r"><span class="rk r3">#3 in sub</span></span></a><a class="vb" href="#p7"><span class="vb-t">What boxer brief brand do you guys actually swear by?<em>r/MensUnderwearGuide · 25 Sep</em></span><span class="vb-bar"><i style="width:4.8%;background:#f96a16"></i></span><span class="vb-n">32.8K</span><span class="vb-r"><span class="rk r1">#1 in sub</span></span></a><a class="vb" href="#p4"><span class="vb-t">Best men&#x27;s underwear for sweating in hot weather?<em>r/malefashionadvice · 21 Sep</em></span><span class="vb-bar"><i style="width:4.3%;background:#c2410c"></i></span><span class="vb-n">29.6K</span><span class="vb-r"><span class="rk r4">#12 in sub</span></span></a><a class="vb" href="#p5"><span class="vb-t">Best sweatpants or joggers for men in 2026?<em>r/malefashionadvice · 25 Sep</em></span><span class="vb-bar"><i style="width:4.0%;background:#1c1611"></i></span><span class="vb-n">27K</span><span class="vb-r"><span class="rk r4">#11 in sub</span></span></a><a class="vb" href="#p2"><span class="vb-t">Best quick-drying underwear for travel?<em>r/MensUnderwearGuide · 15 Sep</em></span><span class="vb-bar"><i style="width:1.8%;background:#2e7d52"></i></span><span class="vb-n">12.3K</span><span class="vb-r"><span class="rk r3">#3 in sub</span></span></a></div>
+      <p class="cardnote">Views as shown in each thread's Reddit Post Insights at the time of capture. Click a row to jump to the post.</p>
+    </div>
+
+    <div class="duo2">
+      <div class="chartcard">
+        <div class="eyebrow">Front page of the community</div>
+        <div class="chart-title">5 of 8 posts reached the top 3 of their subreddit</div>
+        <div class="rcs"><a class="rc gold" href="#p3"><b>#1</b><span>r/malefashionadvice</span><em>Most comfortable underwear</em></a><a class="rc gold" href="#p7"><b>#1</b><span>r/MensUnderwearGuide</span><em>Boxer brief brands</em></a><a class="rc hot" href="#p8"><b>#2</b><span>r/onebag</span><em>Anti-odor travel tees</em></a><a class="rc hot" href="#p2"><b>#3</b><span>r/MensUnderwearGuide</span><em>Quick-dry travel</em></a><a class="rc hot" href="#p6"><b>#3</b><span>r/mensfashionadvice</span><em>Best boxer briefs</em></a><a class="rc " href="#p5"><b>#11</b><span>r/malefashionadvice</span><em>Sweatpants &amp; joggers</em></a><a class="rc " href="#p4"><b>#12</b><span>r/malefashionadvice</span><em>Sweating in hot weather</em></a></div>
+        <p class="cardnote">Reddit's own “#N post on r/… today” badge, from Post Insights. Two threads were the #1 post of the day in their community.</p>
+      </div>
+      <div class="chartcard">
+        <div class="eyebrow">Who saw it</div>
+        <div class="chart-title">The right market: <b class="acc">62%</b> of views came from the US</div>
+        <div class="au-big"><b>≈634K</b><span>US views</span></div>
+        <div class="aus"><div class="au"><span class="au-t">Sweatpants &amp; joggers</span><span class="au-bar"><i style="width:70.6%"></i></span><span class="au-n">71%</span></div><div class="au"><span class="au-t">Best boxer briefs</span><span class="au-bar"><i style="width:69.7%"></i></span><span class="au-n">70%</span></div><div class="au"><span class="au-t">Sweating in hot weather</span><span class="au-bar"><i style="width:67.7%"></i></span><span class="au-n">68%</span></div><div class="au"><span class="au-t">Quick-dry travel</span><span class="au-bar"><i style="width:64.0%"></i></span><span class="au-n">64%</span></div><div class="au"><span class="au-t">Boxer brief brands</span><span class="au-bar"><i style="width:63.5%"></i></span><span class="au-n">64%</span></div><div class="au"><span class="au-t">Sweat a lot</span><span class="au-bar"><i style="width:62.9%"></i></span><span class="au-n">63%</span></div><div class="au"><span class="au-t">Most comfortable underwear</span><span class="au-bar"><i style="width:61.8%"></i></span><span class="au-n">62%</span></div><div class="au"><span class="au-t">Anti-odor travel tees</span><span class="au-bar"><i style="width:53.3%"></i></span><span class="au-n">53%</span></div></div>
+        <p class="cardnote">US share of views per post. Canada is the next-largest market on every post that reports it (7–9%), then the UK.</p>
+      </div>
+    </div>
+
+    <div class="duo2">
+      <div class="chartcard">
+        <div class="eyebrow">On Google</div>
+        <div class="chart-title">67 page-one rankings for 57 distinct searches</div>
+        <div class="pl-bar"><i style="flex:49;background:var(--accent)" title="What people are saying: 49"></i><i style="flex:10;background:var(--navy)" title="Discussions and forums: 10"></i><i style="flex:7;background:#e9b48a" title="Top results: 7"></i><i style="flex:1;background:var(--green)" title="AI Overview: 1"></i></div>
+        <div class="pl-leg"><div class="pl-item"><i class="sw" style="background:var(--accent)"></i><b>49</b><span>What people are saying</span></div><div class="pl-item"><i class="sw" style="background:var(--navy)"></i><b>10</b><span>Discussions and forums</span></div><div class="pl-item"><i class="sw" style="background:#e9b48a"></i><b>7</b><span>Top results</span></div><div class="pl-item"><i class="sw" style="background:var(--green)"></i><b>1</b><span>AI Overview</span></div></div>
+        <p class="cardnote">Where our thread appears on the results page. “What people are saying” is Google's carousel of trending Reddit and forum threads, shown near the top of the page.</p>
+      </div>
+      <div class="chartcard">
+        <div class="eyebrow">Rankings by theme</div>
+        <div class="chart-title">Three Mack Weldon product lines in the conversation</div>
+        <div class="ths"><div class="th"><span class="th-t"><i style="background:#f96a16"></i>Comfort & boxer briefs</span><span class="th-bar"><i style="width:100%;background:#f96a16"></i></span><span class="th-n">27</span></div><div class="th"><span class="th-t"><i style="background:#c2410c"></i>Sweat & hot weather</span><span class="th-bar"><i style="width:56%;background:#c2410c"></i></span><span class="th-n">15</span></div><div class="th"><span class="th-t"><i style="background:#2e7d52"></i>Travel & quick-dry</span><span class="th-bar"><i style="width:41%;background:#2e7d52"></i></span><span class="th-n">11</span></div><div class="th"><span class="th-t"><i style="background:#d99a1e"></i>Anti-odor tees</span><span class="th-bar"><i style="width:30%;background:#d99a1e"></i></span><span class="th-n">8</span></div><div class="th"><span class="th-t"><i style="background:#1c1611"></i>Sweatpants & joggers</span><span class="th-bar"><i style="width:22%;background:#1c1611"></i></span><span class="th-n">6</span></div></div>
+        <div class="procchips"><span class="procchip">Underwear &amp; boxer briefs</span><span class="procchip">Sweatpants &amp; joggers</span><span class="procchip">T-shirts</span></div>
+      </div>
+    </div>
+
+    <div class="fp">
+      <div class="fp-col"><div class="fp-head"><div><div class="eyebrow">Subreddit footprint</div><div class="chart-title">36 placements in 12 communities</div></div>
+        <div class="legend"><span><i class="dot a"></i>Posts</span><span><i class="dot n"></i>Branded comments</span></div></div><div class="fp-row"><span class="fp-sub">r/MensUnderwearGuide</span><span class="fp-bar"><i class="seg a" style="width:18.2%" title="Posts: 2"></i><i class="seg n" style="width:81.8%" title="Comments: 9"></i></span><span class="fp-n">11</span></div><div class="fp-row"><span class="fp-sub">r/malefashionadvice</span><span class="fp-bar"><i class="seg a" style="width:36.4%" title="Posts: 4"></i><i class="seg n" style="width:36.4%" title="Comments: 4"></i></span><span class="fp-n">8</span></div><div class="fp-row"><span class="fp-sub">r/AskMen</span><span class="fp-bar"><i class="seg n" style="width:36.4%" title="Comments: 4"></i></span><span class="fp-n">4</span></div><div class="fp-row"><span class="fp-sub">r/BuyItForLife</span><span class="fp-bar"><i class="seg n" style="width:18.2%" title="Comments: 2"></i></span><span class="fp-n">2</span></div><div class="fp-row"><span class="fp-sub">r/mensfashionadvice</span><span class="fp-bar"><i class="seg a" style="width:9.1%" title="Posts: 1"></i><i class="seg n" style="width:9.1%" title="Comments: 1"></i></span><span class="fp-n">2</span></div><div class="fp-row"><span class="fp-sub">r/MeUndies</span><span class="fp-bar"><i class="seg n" style="width:18.2%" title="Comments: 2"></i></span><span class="fp-n">2</span></div><div class="fp-row"><span class="fp-sub">r/onebag</span><span class="fp-bar"><i class="seg a" style="width:9.1%" title="Posts: 1"></i><i class="seg n" style="width:9.1%" title="Comments: 1"></i></span><span class="fp-n">2</span></div><div class="fp-row"><span class="fp-sub">r/AskBlackGayBros</span><span class="fp-bar"><i class="seg n" style="width:9.1%" title="Comments: 1"></i></span><span class="fp-n">1</span></div><div class="fp-row"><span class="fp-sub">r/bigmenfashionadvice</span><span class="fp-bar"><i class="seg n" style="width:9.1%" title="Comments: 1"></i></span><span class="fp-n">1</span></div><div class="fp-row"><span class="fp-sub">r/EgySelfCare</span><span class="fp-bar"><i class="seg n" style="width:9.1%" title="Comments: 1"></i></span><span class="fp-n">1</span></div><div class="fp-row"><span class="fp-sub">r/ftm</span><span class="fp-bar"><i class="seg n" style="width:9.1%" title="Comments: 1"></i></span><span class="fp-n">1</span></div><div class="fp-row"><span class="fp-sub">r/Shein</span><span class="fp-bar"><i class="seg n" style="width:9.1%" title="Comments: 1"></i></span><span class="fp-n">1</span></div></div>
+      <div class="fp-col"><div class="fp-head"><div><div class="eyebrow">Activity</div><div class="chart-title">Day by day, 29 Aug to 25 Sep</div></div></div>
+        <div class="days"><div class="day on" title="29 Aug: 0 post(s), 1 comment(s)"><span class="day-n">1</span><span class="day-bar"><i class="seg n" style="height:5.3%"></i></span><span class="day-l">29</span></div><div class="day" title="30 Aug: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day" title="31 Aug: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day" title="1 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l">1</span></div><div class="day" title="2 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day" title="3 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day on" title="4 Sep: 1 post(s), 1 comment(s)"><span class="day-n">2</span><span class="day-bar"><i class="seg n" style="height:5.3%"></i><i class="seg a" style="height:5.3%"></i></span><span class="day-l">4</span></div><div class="day" title="5 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day" title="6 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day" title="7 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day" title="8 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l">8</span></div><div class="day" title="9 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day" title="10 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day" title="11 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l">11</span></div><div class="day" title="12 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day" title="13 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day" title="14 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day on" title="15 Sep: 1 post(s), 1 comment(s)"><span class="day-n">2</span><span class="day-bar"><i class="seg n" style="height:5.3%"></i><i class="seg a" style="height:5.3%"></i></span><span class="day-l">15</span></div><div class="day" title="16 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day" title="17 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day" title="18 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l">18</span></div><div class="day" title="19 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day on" title="20 Sep: 1 post(s), 1 comment(s)"><span class="day-n">2</span><span class="day-bar"><i class="seg n" style="height:5.3%"></i><i class="seg a" style="height:5.3%"></i></span><span class="day-l"></span></div><div class="day on" title="21 Sep: 1 post(s), 1 comment(s)"><span class="day-n">2</span><span class="day-bar"><i class="seg n" style="height:5.3%"></i><i class="seg a" style="height:5.3%"></i></span><span class="day-l"></span></div><div class="day" title="22 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l">22</span></div><div class="day" title="23 Sep: 0 post(s), 0 comment(s)"><span class="day-n"></span><span class="day-bar"></span><span class="day-l"></span></div><div class="day on" title="24 Sep: 0 post(s), 19 comment(s)"><span class="day-n">19</span><span class="day-bar"><i class="seg n" style="height:100.0%"></i></span><span class="day-l"></span></div><div class="day on" title="25 Sep: 4 post(s), 4 comment(s)"><span class="day-n">8</span><span class="day-bar"><i class="seg n" style="height:21.1%"></i><i class="seg a" style="height:21.1%"></i></span><span class="day-l">25</span></div></div>
+        <div class="daylab"><span>Aug</span><span>Sep</span></div>
+        <div class="fpstats"><div><b>8</b><span>Posts</span></div><div><b>28</b><span>Branded comments</span></div><div><b>12</b><span>Subreddits</span></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="ownband" id="own"><div class="ownband-in">
+  <div class="eyebrow">Keywords we own</div>
+  <h2>When people ask Google about <span>boxer briefs</span>, Reddit answers with our threads.</h2>
+  <p class="own-lead">For these searches it isn't one of our threads on page one, it's several. Every card in the discussion carousel is one of our threads, so whichever one a shopper opens, they land in a conversation where Mack Weldon comes up.</p>
+  <div class="own-grid"><article class="own-c"><a class="own-img" href="shots/s28.webp" data-kw="best comfortable boxer briefs" data-pl="3 of our threads on page one"><img src="thumbs/t28.webp" alt="Google results for best comfortable boxer briefs" loading="lazy"><span class="own-zoom">View capture <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><div class="own-b"><div class="own-slots"><i></i><i></i><i></i><span>3 of our threads</span></div><h3>“best comfortable boxer briefs”</h3><p>Cards 1, 2 and 3 of Google&#x27;s “What people are saying” carousel are all our threads.</p><div class="own-ps"><a class="own-p" href="#p3"><span>3</span>Most comfortable men&#x27;s underwear you&#x27;ve ever worn?<em>r/malefashionadvice</em></a><a class="own-p" href="#p6"><span>6</span>Best boxer briefs for men?<em>r/mensfashionadvice</em></a><a class="own-p" href="#p7"><span>7</span>What boxer brief brand do you guys actually swear by?<em>r/MensUnderwearGuide</em></a></div></div></article><article class="own-c"><a class="own-img" href="shots/s54.webp" data-kw="boxer brief recommendations" data-pl="3 of our threads on page one"><img src="thumbs/t54.webp" alt="Google results for boxer brief recommendations" loading="lazy"><span class="own-zoom">View capture <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><div class="own-b"><div class="own-slots"><i></i><i></i><i></i><span>3 of our threads</span></div><h3>“boxer brief recommendations”</h3><p>Cards 1, 2 and 3 of the carousel are all our threads.</p><div class="own-ps"><a class="own-p" href="#p6"><span>6</span>Best boxer briefs for men?<em>r/mensfashionadvice</em></a><a class="own-p" href="#p3"><span>3</span>Most comfortable men&#x27;s underwear you&#x27;ve ever worn?<em>r/malefashionadvice</em></a><a class="own-p" href="#p7"><span>7</span>What boxer brief brand do you guys actually swear by?<em>r/MensUnderwearGuide</em></a></div></div></article><article class="own-c"><a class="own-img" href="shots/s27.webp" data-kw="best boxer briefs" data-pl="3 of our threads on page one"><img src="thumbs/t27.webp" alt="Google results for best boxer briefs" loading="lazy"><span class="own-zoom">View capture <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><div class="own-b"><div class="own-slots"><i></i><i></i><i></i><span>3 of our threads</span></div><h3>“best boxer briefs”</h3><p>Three of our threads share the carousel for the category&#x27;s head term.</p><div class="own-ps"><a class="own-p" href="#p6"><span>6</span>Best boxer briefs for men?<em>r/mensfashionadvice</em></a><a class="own-p" href="#p3"><span>3</span>Most comfortable men&#x27;s underwear you&#x27;ve ever worn?<em>r/malefashionadvice</em></a><a class="own-p" href="#p7"><span>7</span>What boxer brief brand do you guys actually swear by?<em>r/MensUnderwearGuide</em></a></div></div></article></div>
+  <div class="dbl-head"><span class="eyebrow">Two threads on page one</span></div>
+  <div class="dbl-grid"><a class="dbl" href="shots/s18.webp" data-kw="most comfortable underwear for guys" data-pl="2 of our threads on page one"><span class="dbl-img"><img src="thumbs/t18.webp" alt="Google results for most comfortable underwear for guys" loading="lazy"></span><span class="dbl-b"><span class="own-slots sm"><i></i><i></i><span>2 threads</span></span><b>“most comfortable underwear for guys”</b><em>Most comfortable underwear + Best boxer briefs</em></span></a><a class="dbl" href="shots/s20.webp" data-kw="what is the most comfortable men&#x27;s underwear" data-pl="2 of our threads on page one"><span class="dbl-img"><img src="thumbs/t20.webp" alt="Google results for what is the most comfortable men&#x27;s underwear" loading="lazy"></span><span class="dbl-b"><span class="own-slots sm"><i></i><i></i><span>2 threads</span></span><b>“what is the most comfortable men&#x27;s underwear”</b><em>Most comfortable underwear + Best boxer briefs</em></span></a><a class="dbl" href="shots/s23.webp" data-kw="best comfortable mens underwear" data-pl="2 of our threads on page one"><span class="dbl-img"><img src="thumbs/t23.webp" alt="Google results for best comfortable mens underwear" loading="lazy"></span><span class="dbl-b"><span class="own-slots sm"><i></i><i></i><span>2 threads</span></span><b>“best comfortable mens underwear”</b><em>Most comfortable underwear + Best boxer briefs</em></span></a><a class="dbl" href="shots/s41.webp" data-kw="underwear for sweaty summers" data-pl="2 of our threads on page one"><span class="dbl-img"><img src="thumbs/t41.webp" alt="Google results for underwear for sweaty summers" loading="lazy"></span><span class="dbl-b"><span class="own-slots sm"><i></i><i></i><span>2 threads</span></span><b>“underwear for sweaty summers”</b><em>Sweat a lot + Sweating in hot weather</em></span></a></div>
+</div></section>
+
+<section class="brand" id="posts">
+  <div class="band"><div class="band-in">
+    <div class="band-top"><div><div class="eyebrow">Posts and rankings</div><h2>Eight threads,<br>1.02M views</h2></div>
+      <div class="band-procs"><div class="eyebrow">Themes targeted</div><div><span class="proc">Comfort & boxer briefs</span><span class="proc">Sweat & hot weather</span><span class="proc">Travel & quick-dry</span><span class="proc">Anti-odor tees</span><span class="proc">Sweatpants & joggers</span></div></div></div>
+    <div class="band-stats">
+      <div><b>8</b><span>Posts live</span></div>
+      <div><b>1.02M</b><span>Views</span></div>
+      <div><b>67</b><span>Google rankings</span><em>57 distinct searches</em></div>
+      <div><b>2</b><span>#1 posts of the day</span><em>5 in the top 3</em></div>
+    </div>
+  </div></div>
+  <div class="wrap">
+    <div class="block"><div class="block-head"><h3>Keyword coverage by post</h3><p>Each keyword below was searched on Google and captured with our thread on the first page.</p></div>
+    <div class="cov"><div class="cov-head"><span>Post</span><span>Keywords ranking</span></div><a class="cov-row" href="#p1"><span class="cov-t">Best underwear if you sweat a lot?<em>r/malefashionadvice · 4 Sep · 86.9K views</em></span><span class="cov-bar"><i style="width:15%"></i></span><span class="cov-n">2</span></a><a class="cov-row" href="#p2"><span class="cov-t">Best quick-drying underwear for travel?<em>r/MensUnderwearGuide · 15 Sep · 12.3K views</em></span><span class="cov-bar"><i style="width:85%"></i></span><span class="cov-n">11</span></a><a class="cov-row" href="#p3"><span class="cov-t">Most comfortable men&#x27;s underwear you&#x27;ve ever worn?<em>r/malefashionadvice · 20 Sep · 683K views</em></span><span class="cov-bar"><i style="width:92%"></i></span><span class="cov-n">12</span></a><a class="cov-row" href="#p4"><span class="cov-t">Best men&#x27;s underwear for sweating in hot weather?<em>r/malefashionadvice · 21 Sep · 29.6K views</em></span><span class="cov-bar"><i style="width:100%"></i></span><span class="cov-n">13</span></a><a class="cov-row" href="#p5"><span class="cov-t">Best sweatpants or joggers for men in 2026?<em>r/malefashionadvice · 25 Sep · 27K views</em></span><span class="cov-bar"><i style="width:46%"></i></span><span class="cov-n">6</span></a><a class="cov-row" href="#p6"><span class="cov-t">Best boxer briefs for men?<em>r/mensfashionadvice · 25 Sep · 51K views</em></span><span class="cov-bar"><i style="width:62%"></i></span><span class="cov-n">8</span></a><a class="cov-row" href="#p7"><span class="cov-t">What boxer brief brand do you guys actually swear by?<em>r/MensUnderwearGuide · 25 Sep · 32.8K views</em></span><span class="cov-bar"><i style="width:54%"></i></span><span class="cov-n">7</span></a><a class="cov-row" href="#p8"><span class="cov-t">Best anti-odor t-shirts for travel? Looking for ones I can rewear a few days<em>r/onebag · 25 Sep · 101K views</em></span><span class="cov-bar"><i style="width:62%"></i></span><span class="cov-n">8</span></a></div></div>
+    
+<article class="card post" id="p1" style="--tc:#c2410c">
+  <div class="ph">
+    <a class="ins" href="ins/i00.webp" data-kw="Post insights: Best underwear if you sweat a lot?" data-pl="Reddit Post Insights">
+      <img src="ins/i00.webp" alt="Reddit Post Insights for Best underwear if you sweat a lot?" loading="lazy"><span class="ins-cap">Reddit Post Insights <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <div class="ph-b">
+      <div class="card-meta"><span class="pnum">Post 01</span><span class="sub">r/malefashionadvice</span><span class="sep">·</span><span>4 Sep 2026</span><span class="pill">Sweat & hot weather</span></div>
+      <h3 class="ptitle"><a href="https://www.reddit.com/r/malefashionadvice/comments/1w78ite/best_underwear_if_you_sweat_a_lot/" target="_blank" rel="noopener">Best underwear if you sweat a lot? <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></h3>
+      
+      <div class="pstats"><div class="pstat"><b>86.9K</b><span>Views</span></div><div class="pstat"><b>2</b><span>Keywords ranking</span></div><div class="pstat"><b>63%</b><span>US audience</span></div><div class="pstat"><b>44</b><span>Upvotes</span></div></div>
+      
+    </div>
+  </div>
+  <div class="lg"><div class="lg-head"><span>#</span><span>Keyword searched on Google</span><span>Where we appear</span><span>Capture</span><span></span></div><a class="lg-row" href="shots/s01.webp" data-kw="underwear for sweaty summers" data-pl="AI Overview"><span class="lg-i">01</span><span class="lg-k">underwear for sweaty summers<em class="also">2 of our threads rank here</em></span><span class="lg-s sA">AI Overview</span><span class="lg-t"><img src="thumbs/t01.webp" alt="Google results for underwear for sweaty summers" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s38.webp" data-kw="sweat absorbing underwear for summer" data-pl="What people are saying"><span class="lg-i">02</span><span class="lg-k">sweat absorbing underwear for summer</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t38.webp" alt="Google results for sweat absorbing underwear for summer" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+</article>
+<article class="card post" id="p2" style="--tc:#2e7d52">
+  <div class="ph">
+    <a class="ins" href="ins/i03.webp" data-kw="Post insights: Best quick-drying underwear for travel?" data-pl="Reddit Post Insights">
+      <img src="ins/i03.webp" alt="Reddit Post Insights for Best quick-drying underwear for travel?" loading="lazy"><span class="ins-cap">Reddit Post Insights <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <div class="ph-b">
+      <div class="card-meta"><span class="pnum">Post 02</span><span class="sub">r/MensUnderwearGuide</span><span class="sep">·</span><span>15 Sep 2026</span><span class="pill">Travel & quick-dry</span></div>
+      <h3 class="ptitle"><a href="https://www.reddit.com/r/MensUnderwearGuide/comments/1wg81dz/best_quickdrying_underwear_for_travel/" target="_blank" rel="noopener">Best quick-drying underwear for travel? <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></h3>
+      <div class="ribbon"><b>#3</b> post on r/MensUnderwearGuide the day it went up</div>
+      <div class="pstats"><div class="pstat"><b>12.3K</b><span>Views</span></div><div class="pstat"><b>11</b><span>Keywords ranking</span></div><div class="pstat"><b>64%</b><span>US audience</span></div></div>
+      <p class="pnote">Also the account&#x27;s #4 post of all time.</p>
+    </div>
+  </div>
+  <div class="lg"><div class="lg-head"><span>#</span><span>Keyword searched on Google</span><span>Where we appear</span><span>Capture</span><span></span></div><a class="lg-row" href="shots/s04.webp" data-kw="best quick drying boxer briefs for travel" data-pl="Discussions and forums"><span class="lg-i">01</span><span class="lg-k">best quick drying boxer briefs for travel</span><span class="lg-s sD">Discussions and forums</span><span class="lg-t"><img src="thumbs/t04.webp" alt="Google results for best quick drying boxer briefs for travel" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s05.webp" data-kw="best quick drying underwear for travel men" data-pl="What people are saying"><span class="lg-i">02</span><span class="lg-k">best quick drying underwear for travel men</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t05.webp" alt="Google results for best quick drying underwear for travel men" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s06.webp" data-kw="recommend quick drying boxer briefs for travel" data-pl="Top results"><span class="lg-i">03</span><span class="lg-k">recommend quick drying boxer briefs for travel</span><span class="lg-s sO">Top results</span><span class="lg-t"><img src="thumbs/t06.webp" alt="Google results for recommend quick drying boxer briefs for travel" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s07.webp" data-kw="quick dry underwear for travel" data-pl="What people are saying"><span class="lg-i">04</span><span class="lg-k">quick dry underwear for travel</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t07.webp" alt="Google results for quick dry underwear for travel" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s08.webp" data-kw="best underwear for long trips men" data-pl="What people are saying"><span class="lg-i">05</span><span class="lg-k">best underwear for long trips men</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t08.webp" alt="Google results for best underwear for long trips men" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s09.webp" data-kw="men travel underwear" data-pl="What people are saying"><span class="lg-i">06</span><span class="lg-k">men travel underwear</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t09.webp" alt="Google results for men travel underwear" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s10.webp" data-kw="best underwear for long trips" data-pl="What people are saying"><span class="lg-i">07</span><span class="lg-k">best underwear for long trips</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t10.webp" alt="Google results for best underwear for long trips" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s11.webp" data-kw="top quick drying underwear for travel men" data-pl="Discussions and forums"><span class="lg-i">08</span><span class="lg-k">top quick drying underwear for travel men</span><span class="lg-s sD">Discussions and forums</span><span class="lg-t"><img src="thumbs/t11.webp" alt="Google results for top quick drying underwear for travel men" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s12.webp" data-kw="best quick dry underwear for travel" data-pl="Discussions and forums"><span class="lg-i">09</span><span class="lg-k">best quick dry underwear for travel</span><span class="lg-s sD">Discussions and forums</span><span class="lg-t"><img src="thumbs/t12.webp" alt="Google results for best quick dry underwear for travel" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s13.webp" data-kw="best underwear for travel" data-pl="What people are saying"><span class="lg-i">10</span><span class="lg-k">best underwear for travel</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t13.webp" alt="Google results for best underwear for travel" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s14.webp" data-kw="travel underwear for men" data-pl="What people are saying"><span class="lg-i">11</span><span class="lg-k">travel underwear for men</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t14.webp" alt="Google results for travel underwear for men" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+</article>
+<article class="card post" id="p3" style="--tc:#f96a16">
+  <div class="ph">
+    <a class="ins wide" href="ins/i15.webp" data-kw="Post insights: Most comfortable men&#x27;s underwear you&#x27;ve ever worn?" data-pl="Reddit Post Insights">
+      <img src="ins/i15.webp" alt="Reddit Post Insights for Most comfortable men&#x27;s underwear you&#x27;ve ever worn?" loading="lazy"><span class="ins-cap">Reddit Post Insights <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <div class="ph-b">
+      <div class="card-meta"><span class="pnum">Post 03</span><span class="sub">r/malefashionadvice</span><span class="sep">·</span><span>20 Sep 2026</span><span class="pill">Comfort & boxer briefs</span></div>
+      <h3 class="ptitle"><a href="https://www.reddit.com/r/malefashionadvice/comments/1wlm83t/most_comfortable_mens_underwear_youve_ever_worn/" target="_blank" rel="noopener">Most comfortable men&#x27;s underwear you&#x27;ve ever worn? <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></h3>
+      <div class="ribbon gold"><b>#1</b> post on r/malefashionadvice the day it went up</div>
+      <div class="pstats"><div class="pstat"><b>683K</b><span>Views</span></div><div class="pstat"><b>12</b><span>Keywords ranking</span></div><div class="pstat"><b>62%</b><span>US audience</span></div><div class="pstat"><b>720+</b><span>Replies</span></div><div class="pstat"><b>375</b><span>Upvotes</span></div></div>
+      <p class="pnote">Our comment held a top-3 spot in the thread for the first 12 hours.</p>
+    </div>
+  </div>
+  <div class="lg"><div class="lg-head"><span>#</span><span>Keyword searched on Google</span><span>Where we appear</span><span>Capture</span><span></span></div><a class="lg-row" href="shots/s28.webp" data-kw="best comfortable boxer briefs" data-pl="What people are saying"><span class="lg-i">01</span><span class="lg-k">best comfortable boxer briefs<em class="also">3 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t28.webp" alt="Google results for best comfortable boxer briefs" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s54.webp" data-kw="boxer brief recommendations" data-pl="What people are saying"><span class="lg-i">02</span><span class="lg-k">boxer brief recommendations<em class="also">3 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t54.webp" alt="Google results for boxer brief recommendations" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s27.webp" data-kw="best boxer briefs" data-pl="What people are saying"><span class="lg-i">03</span><span class="lg-k">best boxer briefs<em class="also">3 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t27.webp" alt="Google results for best boxer briefs" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s18.webp" data-kw="most comfortable underwear for guys" data-pl="What people are saying"><span class="lg-i">04</span><span class="lg-k">most comfortable underwear for guys<em class="also">2 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t18.webp" alt="Google results for most comfortable underwear for guys" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s20.webp" data-kw="what is the most comfortable men&#x27;s underwear" data-pl="What people are saying"><span class="lg-i">05</span><span class="lg-k">what is the most comfortable men&#x27;s underwear<em class="also">2 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t20.webp" alt="Google results for what is the most comfortable men&#x27;s underwear" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s23.webp" data-kw="best comfortable mens underwear" data-pl="What people are saying"><span class="lg-i">06</span><span class="lg-k">best comfortable mens underwear<em class="also">2 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t23.webp" alt="Google results for best comfortable mens underwear" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s16.webp" data-kw="most comfortable men&#x27;s underwear reddit" data-pl="Top results"><span class="lg-i">07</span><span class="lg-k">most comfortable men&#x27;s underwear reddit</span><span class="lg-s sO">Top results</span><span class="lg-t"><img src="thumbs/t16.webp" alt="Google results for most comfortable men&#x27;s underwear reddit" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s17.webp" data-kw="comfortable men&#x27;s underwear" data-pl="Discussions and forums"><span class="lg-i">08</span><span class="lg-k">comfortable men&#x27;s underwear</span><span class="lg-s sD">Discussions and forums</span><span class="lg-t"><img src="thumbs/t17.webp" alt="Google results for comfortable men&#x27;s underwear" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s22.webp" data-kw="high quality underwear" data-pl="What people are saying"><span class="lg-i">09</span><span class="lg-k">high quality underwear</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t22.webp" alt="Google results for high quality underwear" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s25.webp" data-kw="softest men&#x27;s underwear" data-pl="Discussions and forums"><span class="lg-i">10</span><span class="lg-k">softest men&#x27;s underwear</span><span class="lg-s sD">Discussions and forums</span><span class="lg-t"><img src="thumbs/t25.webp" alt="Google results for softest men&#x27;s underwear" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s26.webp" data-kw="most comfortable underwear material men" data-pl="What people are saying"><span class="lg-i">11</span><span class="lg-k">most comfortable underwear material men</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t26.webp" alt="Google results for most comfortable underwear material men" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s61.webp" data-kw="best everyday wear briefs" data-pl="What people are saying"><span class="lg-i">12</span><span class="lg-k">best everyday wear briefs</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t61.webp" alt="Google results for best everyday wear briefs" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+</article>
+<article class="card post" id="p4" style="--tc:#c2410c">
+  <div class="ph">
+    <a class="ins" href="ins/i30.webp" data-kw="Post insights: Best men&#x27;s underwear for sweating in hot weather?" data-pl="Reddit Post Insights">
+      <img src="ins/i30.webp" alt="Reddit Post Insights for Best men&#x27;s underwear for sweating in hot weather?" loading="lazy"><span class="ins-cap">Reddit Post Insights <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <div class="ph-b">
+      <div class="card-meta"><span class="pnum">Post 04</span><span class="sub">r/malefashionadvice</span><span class="sep">·</span><span>21 Sep 2026</span><span class="pill">Sweat & hot weather</span></div>
+      <h3 class="ptitle"><a href="https://www.reddit.com/r/malefashionadvice/comments/1wmmbc7/best_mens_underwear_for_sweating_in_hot_weather/" target="_blank" rel="noopener">Best men&#x27;s underwear for sweating in hot weather? <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></h3>
+      <div class="ribbon"><b>#12</b> post on r/malefashionadvice the day it went up</div>
+      <div class="pstats"><div class="pstat"><b>29.6K</b><span>Views</span></div><div class="pstat"><b>13</b><span>Keywords ranking</span></div><div class="pstat"><b>68%</b><span>US audience</span></div><div class="pstat"><b>20+</b><span>Replies</span></div></div>
+      <p class="pnote">The popular comment Google shows on this thread names Mack Weldon AIRKNITx.</p>
+    </div>
+  </div>
+  <div class="lg"><div class="lg-head"><span>#</span><span>Keyword searched on Google</span><span>Where we appear</span><span>Capture</span><span></span></div><a class="lg-row" href="shots/s41.webp" data-kw="underwear for sweaty summers" data-pl="What people are saying"><span class="lg-i">01</span><span class="lg-k">underwear for sweaty summers<em class="also">2 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t41.webp" alt="Google results for underwear for sweaty summers" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s31.webp" data-kw="best underwear for guys who sweat a lot" data-pl="What people are saying"><span class="lg-i">02</span><span class="lg-k">best underwear for guys who sweat a lot</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t31.webp" alt="Google results for best underwear for guys who sweat a lot" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s32.webp" data-kw="best boxer briefs for men who sweat a lot" data-pl="What people are saying"><span class="lg-i">03</span><span class="lg-k">best boxer briefs for men who sweat a lot</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t32.webp" alt="Google results for best boxer briefs for men who sweat a lot" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s33.webp" data-kw="briefs for men who sweat a lot" data-pl="What people are saying"><span class="lg-i">04</span><span class="lg-k">briefs for men who sweat a lot</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t33.webp" alt="Google results for briefs for men who sweat a lot" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s34.webp" data-kw="underwear for sweating in summer" data-pl="What people are saying"><span class="lg-i">05</span><span class="lg-k">underwear for sweating in summer</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t34.webp" alt="Google results for underwear for sweating in summer" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s35.webp" data-kw="best underwear for sweaty people" data-pl="What people are saying"><span class="lg-i">06</span><span class="lg-k">best underwear for sweaty people</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t35.webp" alt="Google results for best underwear for sweaty people" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s36.webp" data-kw="best underwear for working in hot weather" data-pl="What people are saying"><span class="lg-i">07</span><span class="lg-k">best underwear for working in hot weather</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t36.webp" alt="Google results for best underwear for working in hot weather" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s37.webp" data-kw="recommend men&#x27;s underwear for hot weather" data-pl="What people are saying"><span class="lg-i">08</span><span class="lg-k">recommend men&#x27;s underwear for hot weather</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t37.webp" alt="Google results for recommend men&#x27;s underwear for hot weather" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s39.webp" data-kw="best briefs for hot weather" data-pl="What people are saying"><span class="lg-i">09</span><span class="lg-k">best briefs for hot weather</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t39.webp" alt="Google results for best briefs for hot weather" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s40.webp" data-kw="underwear for hot climate" data-pl="What people are saying"><span class="lg-i">10</span><span class="lg-k">underwear for hot climate</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t40.webp" alt="Google results for underwear for hot climate" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s42.webp" data-kw="best underwear for summer" data-pl="What people are saying"><span class="lg-i">11</span><span class="lg-k">best underwear for summer</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t42.webp" alt="Google results for best underwear for summer" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s43.webp" data-kw="boxer briefs for warm weather" data-pl="What people are saying"><span class="lg-i">12</span><span class="lg-k">boxer briefs for warm weather</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t43.webp" alt="Google results for boxer briefs for warm weather" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s44.webp" data-kw="briefs for hot weather" data-pl="What people are saying"><span class="lg-i">13</span><span class="lg-k">briefs for hot weather</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t44.webp" alt="Google results for briefs for hot weather" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+</article>
+<article class="card post" id="p5" style="--tc:#1c1611">
+  <div class="ph">
+    <a class="ins" href="ins/i46.webp" data-kw="Post insights: Best sweatpants or joggers for men in 2026?" data-pl="Reddit Post Insights">
+      <img src="ins/i46.webp" alt="Reddit Post Insights for Best sweatpants or joggers for men in 2026?" loading="lazy"><span class="ins-cap">Reddit Post Insights <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <div class="ph-b">
+      <div class="card-meta"><span class="pnum">Post 05</span><span class="sub">r/malefashionadvice</span><span class="sep">·</span><span>25 Sep 2026</span><span class="pill">Sweatpants & joggers</span></div>
+      <h3 class="ptitle"><a href="https://www.reddit.com/r/malefashionadvice/comments/1wp9bca/best_sweatpants_or_joggers_for_men_in_2026/" target="_blank" rel="noopener">Best sweatpants or joggers for men in 2026? <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></h3>
+      <div class="ribbon"><b>#11</b> post on r/malefashionadvice the day it went up</div>
+      <div class="pstats"><div class="pstat"><b>27K</b><span>Views</span></div><div class="pstat"><b>6</b><span>Keywords ranking</span></div><div class="pstat"><b>71%</b><span>US audience</span></div><div class="pstat"><b>20</b><span>Replies</span></div></div>
+      
+    </div>
+  </div>
+  <div class="lg"><div class="lg-head"><span>#</span><span>Keyword searched on Google</span><span>Where we appear</span><span>Capture</span><span></span></div><a class="lg-row" href="shots/s47.webp" data-kw="best sweatpants for men" data-pl="What people are saying"><span class="lg-i">01</span><span class="lg-k">best sweatpants for men</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t47.webp" alt="Google results for best sweatpants for men" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s48.webp" data-kw="best joggers" data-pl="What people are saying"><span class="lg-i">02</span><span class="lg-k">best joggers</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t48.webp" alt="Google results for best joggers" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s49.webp" data-kw="high quality sweatpants for men" data-pl="What people are saying"><span class="lg-i">03</span><span class="lg-k">high quality sweatpants for men</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t49.webp" alt="Google results for high quality sweatpants for men" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s50.webp" data-kw="top sweatpants brands in 2026" data-pl="Top results"><span class="lg-i">04</span><span class="lg-k">top sweatpants brands in 2026</span><span class="lg-s sO">Top results</span><span class="lg-t"><img src="thumbs/t50.webp" alt="Google results for top sweatpants brands in 2026" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s51.webp" data-kw="best men sweatpants" data-pl="What people are saying"><span class="lg-i">05</span><span class="lg-k">best men sweatpants</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t51.webp" alt="Google results for best men sweatpants" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s52.webp" data-kw="best sweatpants or joggers" data-pl="What people are saying"><span class="lg-i">06</span><span class="lg-k">best sweatpants or joggers</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t52.webp" alt="Google results for best sweatpants or joggers" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+</article>
+<article class="card post" id="p6" style="--tc:#f96a16">
+  <div class="ph">
+    <a class="ins" href="ins/i53.webp" data-kw="Post insights: Best boxer briefs for men?" data-pl="Reddit Post Insights">
+      <img src="ins/i53.webp" alt="Reddit Post Insights for Best boxer briefs for men?" loading="lazy"><span class="ins-cap">Reddit Post Insights <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <div class="ph-b">
+      <div class="card-meta"><span class="pnum">Post 06</span><span class="sub">r/mensfashionadvice</span><span class="sep">·</span><span>25 Sep 2026</span><span class="pill">Comfort & boxer briefs</span></div>
+      <h3 class="ptitle"><a href="https://www.reddit.com/r/mensfashionadvice/comments/1wpbbpz/best_boxer_briefs_for_men/" target="_blank" rel="noopener">Best boxer briefs for men? <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></h3>
+      <div class="ribbon"><b>#3</b> post on r/mensfashionadvice the day it went up</div>
+      <div class="pstats"><div class="pstat"><b>51K</b><span>Views</span></div><div class="pstat"><b>8</b><span>Keywords ranking</span></div><div class="pstat"><b>70%</b><span>US audience</span></div><div class="pstat"><b>90+</b><span>Replies</span></div></div>
+      
+    </div>
+  </div>
+  <div class="lg"><div class="lg-head"><span>#</span><span>Keyword searched on Google</span><span>Where we appear</span><span>Capture</span><span></span></div><a class="lg-row" href="shots/s28.webp" data-kw="best comfortable boxer briefs" data-pl="What people are saying"><span class="lg-i">01</span><span class="lg-k">best comfortable boxer briefs<em class="also">3 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t28.webp" alt="Google results for best comfortable boxer briefs" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s54.webp" data-kw="boxer brief recommendations" data-pl="What people are saying"><span class="lg-i">02</span><span class="lg-k">boxer brief recommendations<em class="also">3 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t54.webp" alt="Google results for boxer brief recommendations" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s27.webp" data-kw="best boxer briefs" data-pl="What people are saying"><span class="lg-i">03</span><span class="lg-k">best boxer briefs<em class="also">3 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t27.webp" alt="Google results for best boxer briefs" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s55.webp" data-kw="most comfortable underwear for guys" data-pl="What people are saying"><span class="lg-i">04</span><span class="lg-k">most comfortable underwear for guys<em class="also">2 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t55.webp" alt="Google results for most comfortable underwear for guys" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s20.webp" data-kw="what is the most comfortable men&#x27;s underwear" data-pl="What people are saying"><span class="lg-i">05</span><span class="lg-k">what is the most comfortable men&#x27;s underwear<em class="also">2 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t20.webp" alt="Google results for what is the most comfortable men&#x27;s underwear" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s23.webp" data-kw="best comfortable mens underwear" data-pl="What people are saying"><span class="lg-i">06</span><span class="lg-k">best comfortable mens underwear<em class="also">2 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t23.webp" alt="Google results for best comfortable mens underwear" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s19.webp" data-kw="comfiest men&#x27;s underwear" data-pl="What people are saying"><span class="lg-i">07</span><span class="lg-k">comfiest men&#x27;s underwear</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t19.webp" alt="Google results for comfiest men&#x27;s underwear" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s29.webp" data-kw="comfiest boxer briefs" data-pl="Discussions and forums"><span class="lg-i">08</span><span class="lg-k">comfiest boxer briefs</span><span class="lg-s sD">Discussions and forums</span><span class="lg-t"><img src="thumbs/t29.webp" alt="Google results for comfiest boxer briefs" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+</article>
+<article class="card post" id="p7" style="--tc:#f96a16">
+  <div class="ph">
+    <a class="ins" href="ins/i56.webp" data-kw="Post insights: What boxer brief brand do you guys actually swear by?" data-pl="Reddit Post Insights">
+      <img src="ins/i56.webp" alt="Reddit Post Insights for What boxer brief brand do you guys actually swear by?" loading="lazy"><span class="ins-cap">Reddit Post Insights <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <div class="ph-b">
+      <div class="card-meta"><span class="pnum">Post 07</span><span class="sub">r/MensUnderwearGuide</span><span class="sep">·</span><span>25 Sep 2026</span><span class="pill">Comfort & boxer briefs</span></div>
+      <h3 class="ptitle"><a href="https://www.reddit.com/r/MensUnderwearGuide/comments/1wpf06y/what_boxer_brief_brand_do_you_guys_actually_swear/" target="_blank" rel="noopener">What boxer brief brand do you guys actually swear by? <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></h3>
+      <div class="ribbon gold"><b>#1</b> post on r/MensUnderwearGuide the day it went up</div>
+      <div class="pstats"><div class="pstat"><b>32.8K</b><span>Views</span></div><div class="pstat"><b>7</b><span>Keywords ranking</span></div><div class="pstat"><b>64%</b><span>US audience</span></div><div class="pstat"><b>60+</b><span>Replies</span></div></div>
+      <p class="pnote">Also the account&#x27;s #9 post of all time.</p>
+    </div>
+  </div>
+  <div class="lg"><div class="lg-head"><span>#</span><span>Keyword searched on Google</span><span>Where we appear</span><span>Capture</span><span></span></div><a class="lg-row" href="shots/s28.webp" data-kw="best comfortable boxer briefs" data-pl="What people are saying"><span class="lg-i">01</span><span class="lg-k">best comfortable boxer briefs<em class="also">3 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t28.webp" alt="Google results for best comfortable boxer briefs" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s54.webp" data-kw="boxer brief recommendations" data-pl="What people are saying"><span class="lg-i">02</span><span class="lg-k">boxer brief recommendations<em class="also">3 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t54.webp" alt="Google results for boxer brief recommendations" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s57.webp" data-kw="best boxer briefs" data-pl="What people are saying"><span class="lg-i">03</span><span class="lg-k">best boxer briefs<em class="also">3 of our threads rank here</em></span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t57.webp" alt="Google results for best boxer briefs" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s59.webp" data-kw="boxer briefs that last" data-pl="What people are saying"><span class="lg-i">04</span><span class="lg-k">boxer briefs that last</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t59.webp" alt="Google results for boxer briefs that last" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s60.webp" data-kw="what boxer brief brand is the best" data-pl="What people are saying"><span class="lg-i">05</span><span class="lg-k">what boxer brief brand is the best</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t60.webp" alt="Google results for what boxer brief brand is the best" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s62.webp" data-kw="most worth it boxer brief brand" data-pl="What people are saying"><span class="lg-i">06</span><span class="lg-k">most worth it boxer brief brand</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t62.webp" alt="Google results for most worth it boxer brief brand" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s63.webp" data-kw="long lasting briefs" data-pl="What people are saying"><span class="lg-i">07</span><span class="lg-k">long lasting briefs</span><span class="lg-s sC">What people are saying</span><span class="lg-t"><img src="thumbs/t63.webp" alt="Google results for long lasting briefs" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+</article>
+<article class="card post" id="p8" style="--tc:#d99a1e">
+  <div class="ph">
+    <a class="ins wide" href="ins/i64.webp" data-kw="Post insights: Best anti-odor t-shirts for travel? Looking for ones I can rewear a few days" data-pl="Reddit Post Insights">
+      <img src="ins/i64.webp" alt="Reddit Post Insights for Best anti-odor t-shirts for travel? Looking for ones I can rewear a few days" loading="lazy"><span class="ins-cap">Reddit Post Insights <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    <div class="ph-b">
+      <div class="card-meta"><span class="pnum">Post 08</span><span class="sub">r/onebag</span><span class="sep">·</span><span>25 Sep 2026</span><span class="pill">Anti-odor tees</span></div>
+      <h3 class="ptitle"><a href="https://www.reddit.com/r/onebag/comments/1wpfdxg/best_antiodor_tshirts_for_travel_looking_for_ones" target="_blank" rel="noopener">Best anti-odor t-shirts for travel? Looking for ones I can rewear a few days <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></h3>
+      <div class="ribbon"><b>#2</b> post on r/onebag the day it went up</div>
+      <div class="pstats"><div class="pstat"><b>101K</b><span>Views</span></div><div class="pstat"><b>8</b><span>Keywords ranking</span></div><div class="pstat"><b>53%</b><span>US audience</span></div><div class="pstat"><b>95</b><span>Replies</span></div><div class="pstat"><b>43</b><span>Upvotes</span></div></div>
+      
+    </div>
+  </div>
+  <div class="lg"><div class="lg-head"><span>#</span><span>Keyword searched on Google</span><span>Where we appear</span><span>Capture</span><span></span></div><a class="lg-row" href="shots/s65.webp" data-kw="best anti odor t shirts for travel" data-pl="Top results"><span class="lg-i">01</span><span class="lg-k">best anti odor t shirts for travel</span><span class="lg-s sO">Top results</span><span class="lg-t"><img src="thumbs/t65.webp" alt="Google results for best anti odor t shirts for travel" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s66.webp" data-kw="anti odor t shirts for travel" data-pl="Top results"><span class="lg-i">02</span><span class="lg-k">anti odor t shirts for travel</span><span class="lg-s sO">Top results</span><span class="lg-t"><img src="thumbs/t66.webp" alt="Google results for anti odor t shirts for travel" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s67.webp" data-kw="odor resistant t shirts for travel" data-pl="Discussions and forums"><span class="lg-i">03</span><span class="lg-k">odor resistant t shirts for travel</span><span class="lg-s sD">Discussions and forums</span><span class="lg-t"><img src="thumbs/t67.webp" alt="Google results for odor resistant t shirts for travel" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s68.webp" data-kw="t shirts that don&#x27;t stink when you sweat" data-pl="Discussions and forums"><span class="lg-i">04</span><span class="lg-k">t shirts that don&#x27;t stink when you sweat</span><span class="lg-s sD">Discussions and forums</span><span class="lg-t"><img src="thumbs/t68.webp" alt="Google results for t shirts that don&#x27;t stink when you sweat" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s69.webp" data-kw="reviews for anti odor t shirts" data-pl="Top results"><span class="lg-i">05</span><span class="lg-k">reviews for anti odor t shirts</span><span class="lg-s sO">Top results</span><span class="lg-t"><img src="thumbs/t69.webp" alt="Google results for reviews for anti odor t shirts" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s70.webp" data-kw="anti odor t shirt suggestions" data-pl="Discussions and forums"><span class="lg-i">06</span><span class="lg-k">anti odor t shirt suggestions</span><span class="lg-s sD">Discussions and forums</span><span class="lg-t"><img src="thumbs/t70.webp" alt="Google results for anti odor t shirt suggestions" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s71.webp" data-kw="t shirts that don&#x27;t stink after a few days" data-pl="Top results"><span class="lg-i">07</span><span class="lg-k">t shirts that don&#x27;t stink after a few days</span><span class="lg-s sO">Top results</span><span class="lg-t"><img src="thumbs/t71.webp" alt="Google results for t shirts that don&#x27;t stink after a few days" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="lg-row" href="shots/s72.webp" data-kw="t shirts that don&#x27;t hold odor" data-pl="Discussions and forums"><span class="lg-i">08</span><span class="lg-k">t shirts that don&#x27;t hold odor</span><span class="lg-s sD">Discussions and forums</span><span class="lg-t"><img src="thumbs/t72.webp" alt="Google results for t shirts that don&#x27;t hold odor" loading="lazy"></span><span class="lg-v">View <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+</article>
+  </div>
+</section>
+
+<div class="wrap" id="comments"><section class="block"><div class="block-head"><h2>Branded comments</h2><p>28 comments placed in live threads where someone asked a question Mack Weldon can answer, across 12 communities.</p></div>
+  <div class="metrics">
+    <div class="metric"><div class="mval">28</div><div class="mlab">Branded comments</div></div>
+    <div class="metric"><div class="mval">12</div><div class="mlab">Communities</div></div>
+    <div class="metric"><div class="mval">9</div><div class="mlab">In r/MensUnderwearGuide</div><div class="mnote">The largest single community</div></div>
+    <div class="metric"><div class="mval">19</div><div class="mlab">Placed on 24 Sep</div><div class="mnote">The busiest day of the cycle</div></div>
+  </div>
+  <div class="subchips"><span class="subchip">r/MensUnderwearGuide<b>9</b></span><span class="subchip">r/AskMen<b>4</b></span><span class="subchip">r/malefashionadvice<b>4</b></span><span class="subchip">r/BuyItForLife<b>2</b></span><span class="subchip">r/MeUndies<b>2</b></span><span class="subchip">r/AskBlackGayBros<b>1</b></span><span class="subchip">r/bigmenfashionadvice<b>1</b></span><span class="subchip">r/EgySelfCare<b>1</b></span><span class="subchip">r/ftm<b>1</b></span><span class="subchip">r/mensfashionadvice<b>1</b></span><span class="subchip">r/onebag<b>1</b></span><span class="subchip">r/Shein<b>1</b></span></div>
+  <div class="table-wrap"><table><thead><tr><th>#</th><th>Date</th><th>Subreddit</th><th>Link</th></tr></thead><tbody><tr><td class="num">01</td><td class="date">29 Aug</td><td><span class="sub-sm">r/MensUnderwearGuide</span></td><td class="repcell"><a href="https://www.reddit.com/r/MensUnderwearGuide/comments/1w1ukk2/comment/p6o2mpi/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">02</td><td class="date">4 Sep</td><td><span class="sub-sm">r/malefashionadvice</span></td><td class="repcell"><a href="https://www.reddit.com/r/malefashionadvice/comments/1w78ite/comment/p7t3qvx/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">03</td><td class="date">15 Sep</td><td><span class="sub-sm">r/MensUnderwearGuide</span></td><td class="repcell"><a href="https://www.reddit.com/r/MensUnderwearGuide/comments/1wg81dz/comment/p9xysm7/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">04</td><td class="date">20 Sep</td><td><span class="sub-sm">r/malefashionadvice</span></td><td class="repcell"><a href="https://www.reddit.com/r/malefashionadvice/comments/1wlm83t/comment/paztlwj/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">05</td><td class="date">21 Sep</td><td><span class="sub-sm">r/malefashionadvice</span></td><td class="repcell"><a href="https://www.reddit.com/r/malefashionadvice/comments/1wmmbc7/comment/pb8871w/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">06</td><td class="date">24 Sep</td><td><span class="sub-sm">r/bigmenfashionadvice</span></td><td class="repcell"><a href="https://www.reddit.com/r/bigmenfashionadvice/comments/1wm128i/comment/pblrug2/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">07</td><td class="date">24 Sep</td><td><span class="sub-sm">r/ftm</span></td><td class="repcell"><a href="https://www.reddit.com/r/ftm/comments/1wktczs/comment/pblnr2i/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">08</td><td class="date">24 Sep</td><td><span class="sub-sm">r/AskMen</span></td><td class="repcell"><a href="https://www.reddit.com/r/AskMen/comments/1wjnhxt/comment/pblnth1/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">09</td><td class="date">24 Sep</td><td><span class="sub-sm">r/MensUnderwearGuide</span></td><td class="repcell"><a href="https://www.reddit.com/r/MensUnderwearGuide/comments/1wiig5p/comment/pbloco7/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">10</td><td class="date">24 Sep</td><td><span class="sub-sm">r/MeUndies</span></td><td class="repcell"><a href="https://www.reddit.com/r/MeUndies/comments/1wi3r2e/comment/pblnc1g/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">11</td><td class="date">24 Sep</td><td><span class="sub-sm">r/BuyItForLife</span></td><td class="repcell"><a href="https://www.reddit.com/r/BuyItForLife/comments/1wgkexv/comment/pbm82yc/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">12</td><td class="date">24 Sep</td><td><span class="sub-sm">r/AskMen</span></td><td class="repcell"><a href="https://www.reddit.com/r/AskMen/comments/1wf07t7/comment/pblujo1/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">13</td><td class="date">24 Sep</td><td><span class="sub-sm">r/AskMen</span></td><td class="repcell"><a href="https://www.reddit.com/r/AskMen/comments/1wd4diz/comment/pblqbqp/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">14</td><td class="date">24 Sep</td><td><span class="sub-sm">r/MensUnderwearGuide</span></td><td class="repcell"><a href="https://www.reddit.com/r/MensUnderwearGuide/comments/1wb5m7n/comment/pblsdnq/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">15</td><td class="date">24 Sep</td><td><span class="sub-sm">r/MensUnderwearGuide</span></td><td class="repcell"><a href="https://www.reddit.com/r/MensUnderwearGuide/comments/1wblbpa/comment/pblu7aa/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">16</td><td class="date">24 Sep</td><td><span class="sub-sm">r/MensUnderwearGuide</span></td><td class="repcell"><a href="https://www.reddit.com/r/MensUnderwearGuide/comments/1watuqe/comment/pbly9m4/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">17</td><td class="date">24 Sep</td><td><span class="sub-sm">r/BuyItForLife</span></td><td class="repcell"><a href="https://www.reddit.com/r/BuyItForLife/comments/1w9diyj/comment/pbmajdb/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">18</td><td class="date">24 Sep</td><td><span class="sub-sm">r/EgySelfCare</span></td><td class="repcell"><a href="https://www.reddit.com/r/EgySelfCare/comments/1w8otwm/comment/pbm2nnl/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">19</td><td class="date">24 Sep</td><td><span class="sub-sm">r/MensUnderwearGuide</span></td><td class="repcell"><a href="https://www.reddit.com/r/MensUnderwearGuide/comments/1w7ng45/comment/pbm31gg/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">20</td><td class="date">24 Sep</td><td><span class="sub-sm">r/MensUnderwearGuide</span></td><td class="repcell"><a href="https://www.reddit.com/r/MensUnderwearGuide/comments/1w6x5n8/comment/pbm5cig/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">21</td><td class="date">24 Sep</td><td><span class="sub-sm">r/MeUndies</span></td><td class="repcell"><a href="https://www.reddit.com/r/MeUndies/comments/1w66d8o/comment/pbm3nno/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">22</td><td class="date">24 Sep</td><td><span class="sub-sm">r/AskMen</span></td><td class="repcell"><a href="https://www.reddit.com/r/AskMen/comments/1w0mpvx/comment/pbm6zj3/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">23</td><td class="date">24 Sep</td><td><span class="sub-sm">r/Shein</span></td><td class="repcell"><a href="https://www.reddit.com/r/Shein/comments/1w01v07/comment/pbm72gt/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">24</td><td class="date">24 Sep</td><td><span class="sub-sm">r/AskBlackGayBros</span></td><td class="repcell"><a href="https://www.reddit.com/r/AskBlackGayBros/comments/1w50zn5/comment/pbm6u1o/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">25</td><td class="date">25 Sep</td><td><span class="sub-sm">r/malefashionadvice</span></td><td class="repcell"><a href="https://www.reddit.com/r/malefashionadvice/comments/1wp9bca/comment/pbu3adl/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">26</td><td class="date">25 Sep</td><td><span class="sub-sm">r/mensfashionadvice</span></td><td class="repcell"><a href="https://www.reddit.com/r/mensfashionadvice/comments/1wpbbpz/comment/pbu7g6c/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">27</td><td class="date">25 Sep</td><td><span class="sub-sm">r/MensUnderwearGuide</span></td><td class="repcell"><a href="https://www.reddit.com/r/MensUnderwearGuide/comments/1wpf06y/comment/pbuuevo/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr><tr><td class="num">28</td><td class="date">25 Sep</td><td><span class="sub-sm">r/onebag</span></td><td class="repcell"><a href="https://www.reddit.com/r/onebag/comments/1wpfdxg/comment/pbuw9a2/" target="_blank" rel="noopener">View comment <svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></td></tr></tbody></table></div>
+</section></div>
+
+<div class="wrap" id="ahead"><section class="block"><div class="block-head"><h2>Looking ahead</h2></div>
+  <div class="signoff"><div class="signoff-text">
+    <p>Four weeks, 8 threads and 28 branded comments. Those threads have been viewed <b>1.02M</b> times on Reddit, 62% of that from the US, and they now sit on the first page of Google <b>67 times across 57 different searches</b>. Every one of those rankings is screenshotted above.</p>
+    <p>The strongest ground is boxer briefs and comfort. For searches like “best comfortable boxer briefs” and “boxer brief recommendations”, every card in Google's discussion carousel is one of our threads. Sweat and hot weather, travel, sweatpants and anti-odor tees are each ranking too, which gives the next cycle five themes to build on.</p>
+  </div>
+  <div class="ahead-k"><div class="eyebrow">Themes ranking now</div><div class="ak"><i style="background:#f96a16"></i>Comfort & boxer briefs<b>27</b></div><div class="ak"><i style="background:#c2410c"></i>Sweat & hot weather<b>15</b></div><div class="ak"><i style="background:#2e7d52"></i>Travel & quick-dry<b>11</b></div><div class="ak"><i style="background:#d99a1e"></i>Anti-odor tees<b>8</b></div><div class="ak"><i style="background:#1c1611"></i>Sweatpants & joggers<b>6</b></div></div>
+  </div>
+</section></div>
+
+<footer id="method"><div class="m81card"><div class="m81-watermark">M81 MEDIA</div><div class="m81card-inner">
+  <div class="m81-lock"><img src="m81-logo.png" alt="M81"><span class="bname">M81</span></div>
+  <div class="m81-method"><p class="fineprint"><strong>Method.</strong> Each ranking was captured from a live google.com results page on 25 Sep 2026. The dark panel on the right of every screenshot is the raw data for that search. A keyword counts as ranking when our thread appears on the first page, and it is counted once for each of our threads that appears, so a search where three threads rank counts three times (67 rankings, 57 distinct searches). Views, subreddit rank and audience come from each thread's Reddit Post Insights at the time of capture. Rankings shift by location, device and date, so each capture is a snapshot from the day it was run.</p>
+  <div class="src"><span>Search engine: Google</span><span>Location: United States</span><span>Device: Desktop</span><span>Captured: 25 Sep 2026</span><span>Period: 29 Aug to 25 Sep 2026</span></div></div>
+</div></div></footer>
+
+<div class="lb" id="lb" hidden><button class="lb-x" aria-label="Close">Close</button><button class="lb-prev" aria-label="Previous">Prev</button><button class="lb-next" aria-label="Next">Next</button>
+<figure><figcaption><span id="lb-pl"></span><b id="lb-kw"></b><em id="lb-ct"></em></figcaption><div class="lb-stage"><span class="lb-msg lb-wait">Loading capture</span><span class="lb-msg lb-fail">This capture did not load. Refresh the page and try again.</span><img id="lb-img" alt=""></div></figure></div>
+<script>(function () {
+  var tiles = Array.prototype.slice.call(document.querySelectorAll('a[data-kw]'));
+  var lb = document.getElementById('lb'), img = document.getElementById('lb-img');
+  var kw = document.getElementById('lb-kw'), pl = document.getElementById('lb-pl'), ct = document.getElementById('lb-ct');
+  var cur = 0;
+  function show(i) {
+    cur = (i + tiles.length) % tiles.length;
+    var t = tiles[cur], src = t.getAttribute('href');
+    lb.classList.add('loading'); lb.classList.remove('failed');
+    lb.classList.toggle('tall', /^ins\//.test(src));
+    img.onload = function () { lb.classList.remove('loading'); };
+    img.onerror = function () { if (img.getAttribute('src')) { lb.classList.remove('loading'); lb.classList.add('failed'); } };
+    img.src = src;
+    var nx = tiles[(cur + 1) % tiles.length]; if (nx) { new Image().src = nx.getAttribute('href'); }
+    img.alt = t.dataset.kw;
+    kw.textContent = t.dataset.kw; pl.textContent = t.dataset.pl;
+    ct.textContent = (cur + 1) + ' / ' + tiles.length;
+    lb.hidden = false; document.body.style.overflow = 'hidden';
+  }
+  function close() { lb.hidden = true; img.removeAttribute('src'); document.body.style.overflow = ''; }
+  tiles.forEach(function (t, i) { t.addEventListener('click', function (ev) { ev.preventDefault(); show(i); }); });
+  lb.querySelector('.lb-x').addEventListener('click', close);
+  lb.querySelector('.lb-prev').addEventListener('click', function () { show(cur - 1); });
+  lb.querySelector('.lb-next').addEventListener('click', function () { show(cur + 1); });
+  lb.addEventListener('click', function (ev) { if (ev.target === lb) close(); });
+  document.addEventListener('keydown', function (ev) {
+    if (lb.hidden) return;
+    if (ev.key === 'Escape') close();
+    if (ev.key === 'ArrowLeft') show(cur - 1);
+    if (ev.key === 'ArrowRight') show(cur + 1);
+  });
+})();</script>
+</body></html>
