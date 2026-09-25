@@ -186,8 +186,8 @@ FEED = [
     ("2026-09-24", "r/AskBlackGayBros", "https://www.reddit.com/r/AskBlackGayBros/comments/1w50zn5/comment/pbm6u1o/"),
     ("2026-09-25", "r/malefashionadvice", "https://www.reddit.com/r/malefashionadvice/comments/1wp9bca/comment/pbu3adl/"),
     ("2026-09-25", "r/mensfashionadvice", "https://www.reddit.com/r/mensfashionadvice/comments/1wpbbpz/comment/pbu7g6c/"),
-    ("2026-09-25", "r/MensUnderwearGuide", "https://www.reddit.com/r/MensUnderwearGuide/comments/1wpf06y/comment/pbuuevo/"),
-    ("2026-09-25", "r/onebag", "https://www.reddit.com/r/onebag/comments/1wpfdxg/comment/pbuw9a2/"),
+    ("2026-09-25", "r/MensUnderwearGuide", "https://www.reddit.com/r/MensUnderwearGuide/comments/1wpf06y/comment/pbyiefj/"),
+    ("2026-09-25", "r/onebag", "https://www.reddit.com/r/onebag/comments/1wpfdxg/comment/pbyhxis/"),
 ]
 POST_DATES = {"P1": "2026-09-04", "P2": "2026-09-15", "P3": "2026-09-20", "P4": "2026-09-21",
               "P5": "2026-09-25", "P6": "2026-09-25", "P7": "2026-09-25", "P8": "2026-09-25"}

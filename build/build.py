@@ -98,7 +98,7 @@ mx = max(p["views"] for p in POSTS)
 reach_rows = ""
 for p in sorted(POSTS, key=lambda p: -p["views"]):
     rk = f'<span class="rk r{min(p["rank"], 4)}">#{p["rank"]} in sub</span>' if p["rank"] else ""
-    reach_rows += (f'<a class="vb" href="#{p["id"].lower()}"><span class="vb-t">{e(short(p["id"]))}<em>{p["sub"]} · {p["date"]}</em></span>'
+    reach_rows += (f'<a class="vb" href="#{p["id"].lower()}"><span class="vb-t">{e(short(p["id"]))}<em>{p["sub"]}</em></span>'
                    f'<span class="vb-bar"><i style="width:{max(p["views"] / mx * 100, 1.2):.1f}%;background:{THEMES[p["theme"]][1]}"></i></span>'
                    f'<span class="vb-n">{p["vlabel"]}</span><span class="vb-r">{rk}</span></a>')
 
@@ -252,7 +252,7 @@ kmax = max(len(v) for v in kw_by_post.values())
 cov = ""
 for p in sorted(POSTS, key=lambda p: (-len(kw_by_post[p["id"]]), -p["views"])):
     n = len(kw_by_post[p["id"]])
-    cov += (f'<a class="cov-row" href="#{p["id"].lower()}"><span class="cov-t">{e(p["title"])}<em>{p["sub"]} · {p["date"]} · {p["vlabel"]} views</em></span>'
+    cov += (f'<a class="cov-row" href="#{p["id"].lower()}"><span class="cov-t">{e(p["title"])}<em>{p["sub"]} · {p["vlabel"]} views</em></span>'
             f'<span class="cov-bar"><i style="width:{n / kmax * 100:.0f}%"></i></span><span class="cov-n">{n}</span></a>')
 
 cards = ""
@@ -285,7 +285,7 @@ for i, p in enumerate(POSTS, 1):
     <a class="ins{wide}" href="ins/i{p["ins"]:02d}.webp" data-kw="Post insights: {e(p["title"])}" data-pl="Reddit Post Insights">
       <img src="ins/i{p["ins"]:02d}.webp" alt="Reddit Post Insights for {e(p["title"])}" loading="lazy"><span class="ins-cap">Reddit Post Insights {AR}</span></a>
     <div class="ph-b">
-      <div class="card-meta"><span class="pnum">Post {i:02d}</span><span class="sub">{p["sub"]}</span><span class="sep">·</span><span>{p["date"]} 2026</span><span class="pill">{name}</span></div>
+      <div class="card-meta"><span class="pnum">Post {i:02d}</span><span class="sub">{p["sub"]}</span><span class="pill">{name}</span></div>
       <h3 class="ptitle"><a href="{p["url"]}" target="_blank" rel="noopener">{e(p["title"])} {AR}</a></h3>
       <div class="ribrow">{rank}</div>
       <div class="pstats">{stats}</div>
