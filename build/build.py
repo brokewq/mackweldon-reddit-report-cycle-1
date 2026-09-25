@@ -121,25 +121,7 @@ for s, (np_, nc) in sorted(subs.items(), key=lambda kv: (-(kv[1][0] + kv[1][1]),
                 + (f'<i class="seg n" style="width:{nc / smax * 100:.1f}%" title="Comments: {nc}"></i>' if nc else "")
                 + f'</span><span class="fp-n">{np_ + nc}</span></div>')
 
-# daily timeline
-d0, d1 = date(2026, 8, 29), date(2026, 9, 25)
 by_day_c = Counter(d for d, _, _ in FEED)
-by_day_p = Counter(POST_DATES.values())
-dmax = max(by_day_c[k] + by_day_p[k] for k in set(by_day_c) | set(by_day_p))
-days = ""
-d = d0
-while d <= d1:
-    k = d.isoformat()
-    np_, nc = by_day_p.get(k, 0), by_day_c.get(k, 0)
-    tot = np_ + nc
-    lab = f'{d.day}' if d.day in (29, 1, 4, 8, 11, 15, 18, 22, 25) else ""
-    mon = "Aug" if d.month == 8 else "Sep"
-    days += (f'<div class="day{" on" if tot else ""}" title="{d.day} {mon}: {np_} post(s), {nc} comment(s)">'
-             f'<span class="day-n">{tot or ""}</span><span class="day-bar">'
-             + (f'<i class="seg n" style="height:{nc / dmax * 100:.1f}%"></i>' if nc else "")
-             + (f'<i class="seg a" style="height:{np_ / dmax * 100:.1f}%"></i>' if np_ else "")
-             + f'</span><span class="day-l">{lab}</span></div>')
-    d += timedelta(days=1)
 
 glance = f'''
 <div class="wrap" id="glance">
@@ -184,14 +166,9 @@ glance = f'''
       </div>
     </div>
 
-    <div class="fp">
+    <div class="fp one">
       <div class="fp-col"><div class="fp-head"><div><div class="eyebrow">Subreddit footprint</div><div class="chart-title">{n_posts + n_comments} placements in {n_subs} communities</div></div>
         <div class="legend"><span><i class="dot a"></i>Posts</span><span><i class="dot n"></i>Branded comments</span></div></div>{fp_rows}</div>
-      <div class="fp-col"><div class="fp-head"><div><div class="eyebrow">Activity</div><div class="chart-title">Day by day, 29 Aug to 25 Sep</div></div></div>
-        <div class="days">{days}</div>
-        <div class="daylab"><span>Aug</span><span>Sep</span></div>
-        <div class="fpstats"><div><b>{n_posts}</b><span>Posts</span></div><div><b>{n_comments}</b><span>Branded comments</span></div><div><b>{n_subs}</b><span>Subreddits</span></div></div>
-      </div>
     </div>
   </section>
 </div>
