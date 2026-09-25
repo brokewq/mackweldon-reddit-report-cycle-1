@@ -212,8 +212,8 @@ band = f'''
     <div class="band-stats">
       <div><b>{n_posts}</b><span>Posts live</span></div>
       <div><b>{fmt_m(views)}</b><span>Views</span></div>
-      <div><b>{n_rank}</b><span>Google rankings</span><em>{n_unique} distinct searches</em></div>
-      <div><b>{n_first}</b><span>#1 posts of the day</span><em>{len(top3)} in the top 3</em></div>
+      <div><b>{n_rank}</b><span>Google rankings</span></div>
+      <div><b>{n_first}</b><span>#1 posts of the day</span></div>
     </div>
   </div></div>
   <div class="wrap">
