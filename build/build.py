@@ -10,12 +10,15 @@ from data import DOUBLE, FEED, KW, OWN, POST_DATES, POSTS, SURF, THEMES
 ROOT = Path(__file__).resolve().parent.parent
 AR = ('<svg class="ar" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5" fill="none" '
       'stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+POSTS = POSTS[1:] + POSTS[:1]  # lead with the stronger threads; "sweat a lot" (P1) goes last
 P = {p["id"]: p for p in POSTS}
+NUM = {p["id"]: i for i, p in enumerate(POSTS, 1)}
 
 # ---------- numbers ----------
 views = sum(p["views"] for p in POSTS)
 us_views = sum(p["views"] * p["us"] / 100 for p in POSTS)
 us_share = us_views / views
+
 n_rank = len(KW)
 n_unique = len({k for _, k, _, _ in KW})
 n_posts = len(POSTS)
@@ -44,6 +47,15 @@ def fmt_m(v):
 
 def fmt_k(v):
     return f"{round(v / 1000):,}K"
+
+
+def wbr(sub):
+    """Allow line breaks at word boundaries inside subreddit names."""
+    import re
+    s = re.sub(r"(?<=[a-z])(?=[A-Z])", "<wbr>", sub)
+    for w in ("fashion", "advice"):
+        s = s.replace(w, "<wbr>" + w)
+    return s.replace("r/<wbr>", "r/")
 
 
 def short(pid):
@@ -93,13 +105,16 @@ for p in sorted(POSTS, key=lambda p: -p["views"]):
 rank_cells = ""
 for p in sorted([p for p in POSTS if p["rank"]], key=lambda p: p["rank"]):
     cls = "gold" if p["rank"] == 1 else ("hot" if p["rank"] <= 3 else "")
-    rank_cells += (f'<a class="rc {cls}" href="#{p["id"].lower()}"><b>#{p["rank"]}</b>'
-                   f'<span>{p["sub"]}</span><em>{e(p["nick"])}</em></a>')
+    rank_cells += (f'<a class="rc {cls}" href="#{p["id"].lower()}"><b>#{p["rank"]}</b><em class="rc-d">post of the day</em>'
+                   f'<strong>{e(p["nick"])}</strong><span>{wbr(p["sub"])}</span></a>')
 
-aud_rows = ""
-for p in sorted(POSTS, key=lambda p: -p["us"]):
-    aud_rows += (f'<div class="au"><span class="au-t">{e(p["nick"])}</span>'
-                 f'<span class="au-bar"><i style="width:{p["us"]}%"></i></span><span class="au-n">{p["us"]:.0f}%</span></div>')
+us_min = min(p["us"] for p in POSTS)
+us_top = P["P3"]
+us_facts = (
+    f'<div class="usf"><b>{n_posts}/{n_posts}</b><span><strong>The US led the audience on every thread.</strong> On all eight, no other country came out ahead of it.</span></div>'
+    f'<div class="usf"><b>{us_min:.0f}%+</b><span><strong>A majority on every thread.</strong> The US share never dropped below {us_min:.0f}% of a post\'s views.</span></div>'
+    f'<div class="usf"><b>≈{fmt_k(us_top["views"] * us_top["us"] / 100)}</b><span><strong>US views on one thread alone.</strong> “{e(short("P3"))}” reached {us_top["vlabel"]} views, {us_top["us"]:.0f}% of them in the US.</span></div>'
+)
 
 surf_order = ["C", "D", "O", "A"]
 surf_col = {"C": "var(--accent)", "D": "var(--navy)", "O": "#e9b48a", "A": "var(--green)"}
@@ -122,6 +137,12 @@ for s, (np_, nc) in sorted(subs.items(), key=lambda kv: (-(kv[1][0] + kv[1][1]),
                 + f'</span><span class="fp-n">{np_ + nc}</span></div>')
 
 by_day_c = Counter(d for d, _, _ in FEED)
+mfa = [p for p in POSTS if p["sub"] == "r/malefashionadvice"]
+mfa_n = len(mfa)
+mfa_rank = sum(len(kw_by_post[p["id"]]) for p in mfa)
+mfa_share = sum(p["views"] for p in mfa) / views
+kmax = max(len(v) for v in kw_by_post.values())
+
 
 glance = f'''
 <div class="wrap" id="glance">
@@ -134,20 +155,24 @@ glance = f'''
       <p class="cardnote">Views as shown in each thread's Reddit Post Insights at the time of capture. Click a row to jump to the post.</p>
     </div>
 
-    <div class="duo2">
-      <div class="chartcard">
-        <div class="eyebrow">Front page of the community</div>
-        <div class="chart-title">{len(top3)} of {n_posts} posts reached the top 3 of their subreddit</div>
-        <div class="rcs">{rank_cells}</div>
-        <p class="cardnote">Reddit's own “#N post on r/… today” badge, from Post Insights. Two threads were the #1 post of the day in their community.</p>
-      </div>
-      <div class="chartcard">
+    <div class="chartcard wide">
+      <div class="wide-head"><div><div class="eyebrow">Front page of the community</div>
+        <div class="chart-title">{len(top3)} of {n_posts} posts made their subreddit's top 3 posts of the day</div>
+        <p class="wide-sub">Reddit ranks every post in a subreddit against the others posted that day. Two of our threads finished <b>#1 of the day</b> and three more made the <b>top 3</b>.</p></div></div>
+      <div class="rcs">{rank_cells}</div>
+    </div>
+
+    <div class="chartcard wide split">
+      <div class="split-l">
         <div class="eyebrow">Who saw it</div>
-        <div class="chart-title">The right market: <b class="acc">{us_share:.0%}</b> of views came from the US</div>
-        <div class="au-big"><b>≈{fmt_k(us_views)}</b><span>US views</span></div>
-        <div class="aus">{aud_rows}</div>
-        <p class="cardnote">US share of views per post. Canada is the next-largest market on every post that reports it (7–9%), then the UK.</p>
+        <div class="chart-title">The US is Mack Weldon's audience here</div>
+        <div class="bigs">
+          <div><b class="acc">{us_share:.0%}</b><span>of views from the US</span></div>
+          <div><b>≈{fmt_k(us_views)}</b><span>US views</span></div>
+        </div>
+        <p class="cardnote">US share of each thread's views, from Reddit Post Insights.</p>
       </div>
+      <div class="split-r">{us_facts}</div>
     </div>
 
     <div class="duo2">
@@ -176,7 +201,7 @@ glance = f'''
 
 # ---------- keywords we own ----------
 def dots(pids):
-    return "".join(f'<a class="own-p" href="#{pid.lower()}"><span>{pid[1]}</span>{e(short(pid))}<em>{P[pid]["sub"]}</em></a>' for pid in pids)
+    return "".join(f'<a class="own-p" href="#{pid.lower()}"><span>{NUM[pid]}</span>{e(short(pid))}<em>{P[pid]["sub"]}</em></a>' for pid in pids)
 
 
 own_cards = ""
@@ -225,7 +250,7 @@ band = f'''
 '''
 kmax = max(len(v) for v in kw_by_post.values())
 cov = ""
-for p in POSTS:
+for p in sorted(POSTS, key=lambda p: (-len(kw_by_post[p["id"]]), -p["views"])):
     n = len(kw_by_post[p["id"]])
     cov += (f'<a class="cov-row" href="#{p["id"].lower()}"><span class="cov-t">{e(p["title"])}<em>{p["sub"]} · {p["date"]} · {p["vlabel"]} views</em></span>'
             f'<span class="cov-bar"><i style="width:{n / kmax * 100:.0f}%"></i></span><span class="cov-n">{n}</span></a>')
@@ -249,6 +274,9 @@ for i, p in enumerate(POSTS, 1):
              f'<div class="pstat"><b>{p["us"]:.0f}%</b><span>US audience</span></div>'
              + "".join(f'<div class="pstat"><b>{v}</b><span>{l}</span></div>' for v, l in p.get("extra", [])))
     note = f'<p class="pnote">{e(p["note"])}</p>' if p.get("note") else ""
+    if p.get("highlight"):
+        rank += ('<div class="spot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v3a5 5 0 0 1-10 0V4Z M17 5h3v1.5A3.5 3.5 0 0 1 16.6 10 M7 5H4v1.5A3.5 3.5 0 0 0 7.4 10 M12 12v4 M9.5 16h5v4h-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+                 '<span>Our comment held a <b>top-3 spot</b> in this thread for the first <b>12 hours</b></span></div>')
     iw, ih = Image.open(ROOT / "ins" / f"i{p['ins']:02d}.webp").size
     wide = " wide" if iw / ih > 0.6 else ""
     cards += f'''
@@ -259,7 +287,7 @@ for i, p in enumerate(POSTS, 1):
     <div class="ph-b">
       <div class="card-meta"><span class="pnum">Post {i:02d}</span><span class="sub">{p["sub"]}</span><span class="sep">·</span><span>{p["date"]} 2026</span><span class="pill">{name}</span></div>
       <h3 class="ptitle"><a href="{p["url"]}" target="_blank" rel="noopener">{e(p["title"])} {AR}</a></h3>
-      {rank}
+      <div class="ribrow">{rank}</div>
       <div class="pstats">{stats}</div>
       {note}
     </div>
@@ -294,11 +322,9 @@ comments = f'''
 ahead = f'''
 <div class="wrap" id="ahead"><section class="block"><div class="block-head"><h2>Looking ahead</h2></div>
   <div class="signoff"><div class="signoff-text">
-    <p>Four weeks, {n_posts} threads and {n_comments} branded comments. Those threads have been viewed <b>{fmt_m(views)}</b> times on Reddit, {us_share:.0%} of that from the US, and they now sit on the first page of Google <b>{n_rank} times across {n_unique} different searches</b>. Every one of those rankings is screenshotted above.</p>
-    <p>The strongest ground is boxer briefs and comfort. For searches like “best comfortable boxer briefs” and “boxer brief recommendations”, every card in Google's discussion carousel is one of our threads. Sweat and hot weather, travel, sweatpants and anti-odor tees are each ranking too, which gives the next cycle five themes to build on.</p>
-  </div>
-  <div class="ahead-k"><div class="eyebrow">Themes ranking now</div>{"".join(f'<div class="ak"><i style="background:{THEMES[k][1]}"></i>{THEMES[k][0]}<b>{theme_n[k]}</b></div>' for k, _ in theme_n.most_common())}</div>
-  </div>
+    <p>This cycle taught us a lot about how these niches work. Google keeps returning to a handful of communities per category (our {mfa_n} r/malefashionadvice threads alone produced {mfa_rank} of the {n_rank} rankings), titles phrased the way people actually search pick up the most keywords, and a cluster of threads on one theme can take the entire discussion carousel. Our next batch of posts will be built around those learnings, and will carry the same approach into more of the Mack Weldon range.</p>
+    <p class="ah-thanks">It's been a great first cycle working with your team. Thank you for the trust, and here's to cycle two.</p>
+  </div></div>
 </section></div>
 
 <footer id="method"><div class="m81card"><div class="m81-watermark">M81 MEDIA</div><div class="m81card-inner">

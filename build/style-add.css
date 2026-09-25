@@ -118,7 +118,7 @@
 .own-p span{grid-row:1 / 3; width:22px; height:22px; border-radius:50%; background:var(--accent); color:#16110d; display:grid; place-items:center; font:700 11px/1 'Space Grotesk',sans-serif}
 .own-p em{font-style:normal; font-weight:500; font-size:11px; color:rgba(255,255,255,.5)}
 .dbl-head{margin-top:38px; padding-top:22px; border-top:1px solid rgba(255,255,255,.12)}
-.dbl-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:14px}
+.dbl-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:14px}
 .dbl{display:flex; flex-direction:column; text-decoration:none; color:#fff; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.12); border-radius:16px; overflow:hidden; transition:transform .16s, border-color .16s}
 .dbl:hover{transform:translateY(-3px); border-color:rgba(255,178,125,.5)}
 .dbl-img{display:block; aspect-ratio:16/10; overflow:hidden; background:#fff}
@@ -179,7 +179,7 @@
 
 @media (max-width:900px){
   .reach{grid-template-columns:1fr} .reach .herostats{border-left:none; border-top:1px solid #efe2d3}
-  .duo2{grid-template-columns:1fr} .own-grid{grid-template-columns:1fr 1fr} .dbl-grid{grid-template-columns:1fr 1fr}
+  .duo2{grid-template-columns:1fr} .own-grid{grid-template-columns:1fr 1fr} .dbl-grid{grid-template-columns:repeat(3,1fr)}
   .vb{grid-template-columns:minmax(0,1fr) 1.2fr 56px} .vb-r{display:none}
   .card .lg-head,.card .lg-row{grid-template-columns:30px 1fr 150px 110px} .lg-v{display:none} .lg-t img{width:110px; height:69px}
   .ph{grid-template-columns:180px 1fr; gap:22px}
@@ -207,3 +207,68 @@
 .chartcard .pl-item b{margin-top:10px}
 .chartcard .pl-item span{margin-top:6px; line-height:1.35}
 @media (max-width:620px){ .chartcard .pl-leg{grid-template-columns:1fr 1fr} }
+
+/* comment spotlight (post card) */
+.ribrow{display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:16px}
+.ribrow:empty{display:none}
+.ribrow .ribbon{margin-top:0}
+.spot{display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:500; color:#4a4038;
+  background:var(--orange-soft); border:1px solid var(--orange-line); border-radius:12px; padding:9px 13px}
+.spot svg{width:17px; height:17px; flex:none; color:var(--accent)}
+.spot b{color:#9a3f06; font-weight:700}
+
+/* at-a-glance: roomier cards */
+.chartcard.wide{padding:30px 32px}
+.wide-head{display:flex; justify-content:space-between; align-items:flex-end; gap:32px; flex-wrap:wrap}
+.wide-note{margin:0; max-width:42ch; font-size:13px; line-height:1.55; color:var(--muted)}
+.chartcard.wide .rcs{grid-template-columns:repeat(7,minmax(0,1fr)); gap:12px; margin-top:24px}
+.chartcard.wide .rc{padding:18px 16px 16px; border-radius:16px; min-height:150px}
+.chartcard.wide .rc b{font-size:42px}
+.chartcard.wide .rc strong{margin-top:auto; padding-top:18px; font-size:14px; font-weight:600; line-height:1.3; color:var(--ink)}
+.chartcard.wide .rc span{margin-top:5px; font-size:11.5px; white-space:normal; overflow:visible; line-height:1.3}
+.chartcard.wide .rc.gold strong{color:#fff}
+.split{display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:40px; align-items:center}
+.bigs{display:flex; gap:40px; margin-top:22px}
+.bigs b{display:block; font:700 56px/1 'Space Grotesk',sans-serif; letter-spacing:-.04em}
+.bigs span{display:block; margin-top:8px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.09em; color:var(--muted)}
+.split-r{border-left:1px solid var(--line); padding-left:40px}
+.split-r .aus{margin-top:14px}
+.split .au{grid-template-columns:200px 1fr 44px; gap:16px; padding:6px 0}
+.split .au-t{font-size:14px}
+.split .au-bar{height:10px}
+.split .au-n{font-size:14px}
+.duo2 .chartcard{padding:30px 32px}
+.chartcard .pl-leg{grid-template-columns:1fr 1fr; gap:22px 28px; margin-top:24px}
+.chartcard .pl-item b{font-size:34px}
+.chartcard .pl-bar{height:26px; margin-top:22px}
+.ths .th{padding:9px 0}
+@media (max-width:900px){
+  .chartcard.wide .rcs{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .split{grid-template-columns:1fr; gap:24px} .split-r{border-left:none; padding-left:0; border-top:1px solid var(--line); padding-top:22px}
+}
+@media (max-width:620px){
+  .chartcard.wide,.duo2 .chartcard{padding:22px 20px}
+  .chartcard.wide .rcs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .chartcard.wide .rc{min-height:0}
+  .bigs{gap:28px} .bigs b{font-size:44px}
+  .split .au{grid-template-columns:minmax(0,1fr) 1fr 40px; gap:10px}
+}
+
+/* looking ahead */
+.signoff-text .ah-thanks{margin-top:14px; font-family:'Instrument Serif',serif; font-style:italic; font-size:20px; line-height:1.45; color:#6e4a2c}
+
+.wide-sub{margin:10px 0 0; max-width:78ch; font-size:14px; line-height:1.6; color:var(--muted)}
+.wide-sub b{color:#4a4038; font-weight:600}
+.chartcard.wide .rc .rc-d{display:block; margin-top:8px; font-style:normal; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); -webkit-line-clamp:unset}
+.chartcard.wide .rc.gold .rc-d{color:rgba(255,207,110,.75)}
+.chartcard.wide .rc.hot .rc-d{color:#c2570e}
+
+.cardnote b{color:#4a4038}
+
+/* US dominance facts */
+.usf{display:grid; grid-template-columns:120px 1fr; gap:18px; align-items:center; padding:16px 0; border-top:1px solid var(--line)}
+.usf:first-child{border-top:none; padding-top:4px}
+.usf b{font:700 34px/1 'Space Grotesk',sans-serif; letter-spacing:-.03em; color:var(--accent)}
+.usf span{font-size:14px; line-height:1.5; color:var(--muted)}
+.usf strong{display:block; color:var(--ink); font-weight:600; font-size:15px}
+@media (max-width:620px){ .usf{grid-template-columns:1fr; gap:6px} .usf b{font-size:28px} }
